@@ -1,0 +1,33 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+section {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: lightblue;
+    padding: 25px;
+}
+
+section div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: thin solid black;
+}
+
+.sidebar {
+    background-color: lightgreen;
+    width: 100%;
+    height: 100%;
+}
+
+.article {
+    background-color: white;
+}
