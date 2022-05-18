@@ -113,8 +113,20 @@ De acceptatiecriteria is een verzameling vereisten voor een bepaalde User Story.
 
 Zorg dat je een Jira account hebt aangemaakt. Doe daarnaast onderzoek zodat je de volgende 2 vragen kan beantwoorden:
 
-1. Welke vragen moet iedereen tijdens de Daily Stand Up aan zichzelf stellen?
-2. Wat zit er in de Scrum Retrospective?
+1. Welke vragen moet iedereen tijdens de Daily Stand Up aan zichzelf stellen?  
+
+Practically everyone who practises Agile knows the three questions of the Daily Scrum:  
+What did I do yesterday?  
+What am I doing today?  
+What are my impediments?  
+
+    In a Q and A session with Dr. Jeff Sutherland, one of the Scrum Guide’s co-authors, he explained that removing the three questions is meant to make the Daily Scrum less prescriptive.
+He cites the example of Scott Downey, the former Agile Coach of MySpace and inventor of the “Shock Therapy” Scrum rollout model. Mr. Downey would run his Scrums by asking these two questions instead of the traditional three:  
+1 Why isn’t the first story done?   
+2 How do we get the most people working on this story so it will be done? 
+
+2. Wat zit er in de Scrum Retrospective?  
+Dit is een moment voor zelfreflectie met het hele team. Hier beoordeelt iedereen zijn/haar prestaties en worden afspraken gemaakt om het proces te verbeteren.
 
 Je kan ook overwegen om een Scrum certificaat te halen via Certiprof: 
 
