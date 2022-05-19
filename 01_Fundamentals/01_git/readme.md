@@ -68,7 +68,7 @@ Er is een hele goede website om Git te beoefenen - [https://learngitbranching.js
 
 
 Hoe je Git precies gaat gebruiken verschilt veel per werkomgeving. Toch is het goed om een beeld te hebben bij de meest gebruikte manier - Git Flow. Lees daarom dit artikel: [https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)  
-**Done!**   
+**Done!**  
 Probeer daarna ook zelf zo’n flow te gebruiken:
 
 * Maak een eigen Git repo en zet er een simpele HTML file in.  **Done!**  
