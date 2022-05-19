@@ -63,7 +63,7 @@ Als je meer wil leren over Git is Atlassian een hele goede/duidelijke resource:
 # Opdrachten
 
 Er is een hele goede website om Git te beoefenen - [https://learngitbranching.js.org/](https://learngitbranching.js.org/). Maak hier alle oefeningen van!  
-<span style="color:orange">Done!</span>
+**Done!**  
 
 
 
