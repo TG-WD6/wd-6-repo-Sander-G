@@ -62,13 +62,16 @@ Als je meer wil leren over Git is Atlassian een hele goede/duidelijke resource:
 
 # Opdrachten
 
-Er is een hele goede website om Git te beoefenen - [https://learngitbranching.js.org/](https://learngitbranching.js.org/). Maak hier alle oefeningen van!
+Er is een hele goede website om Git te beoefenen - [https://learngitbranching.js.org/](https://learngitbranching.js.org/). Maak hier alle oefeningen van!  
+<span style="color:orange">Done!</span>
 
-Hoe je Git precies gaat gebruiken verschilt veel per werkomgeving. Toch is het goed om een beeld te hebben bij de meest gebruikte manier - Git Flow. Lees daarom dit artikel: [https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
 
+
+Hoe je Git precies gaat gebruiken verschilt veel per werkomgeving. Toch is het goed om een beeld te hebben bij de meest gebruikte manier - Git Flow. Lees daarom dit artikel: [https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)  
+<span style="color:orange">Done!</span>  
 Probeer daarna ook zelf zo’n flow te gebruiken:
 
-* Maak een eigen Git repo en zet er een simpele HTML file in
-* Nodig een groepsgenoot uit om bij te dragen aan je repo.
-* Zorg dat jij en je groepsgenoot aparte branches aanmaken om dezelfde HTML file wat aan te passen
-* Kijk of je via een Git merge het werk in de branch van je groepsgenoot kan combineren met jouw branch.
+* Maak een eigen Git repo en zet er een simpele HTML file in.  <span style="color:orange">Done!</span>
+* Nodig een groepsgenoot uit om bij te dragen aan je repo.  <span style="color:orange">Done!</span>
+* Zorg dat jij en je groepsgenoot aparte branches aanmaken om dezelfde HTML file wat aan te passen.  <span style="color:orange">Done!</span>
+* Kijk of je via een Git merge het werk in de branch van je groepsgenoot kan combineren met jouw branch.  <span style="color:orange">Done!</span>
