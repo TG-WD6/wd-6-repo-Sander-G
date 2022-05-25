@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudo Elements Opdracht 1</title>
+
+  <style>
+  </style>
+
+</head>
+
+<body>
+
+  <h3>Opdracht 1</h3>
+  <p>
+    Er zijn 14 verschillende pseudo-elementen.<br>
+    Beschrijf ze alle 14 kort en maak voor elk een voorbeeld.</p>
+  <br>
+  <p>A CSS pseudo-element is a keyword added to a selector that lets you style a specific part of the selected
+    element(s). <br>
+    For example, ::first-line can be used to change the font of the first line of a paragraph.</p>
+
+  <ul>
+    <li>
+      <h4>::after (:after)</h4>
+      <p>In CSS, ::after creates a pseudo-element that is the last child of the selected element.<br> It is often used
+        to add cosmetic content to an element with the content property. It is inline by default.</p>
+
+    </li>
+    <li>
+      <h4>::backdrop</h4>
+
+      <p>The ::backdrop CSS pseudo-element is a box the size of the viewport which is rendered immediately<br> beneath
+        any
+        element being presented in fullscreen mode.<br> This includes both elements which have been placed in fullscreen
+        mode using the Fullscreen API and dialog elements.<br>
+
+        <br>When multiple elements have been placed into fullscreen mode, the backdrop is drawn immediately beneath<br>
+        the frontmost such element, and on top of the older fullscreen elements.
+      </p>
+    </li>
+    <li>
+      <h4>::before (:before)</h4>
+      <p>
+        In CSS, ::before creates a pseudo-element that is the first child of the selected element.<br>
+        It is often used to add cosmetic content to an element with the content property.<br> It is inline by default.
+      </p>
+
+    </li>
+    <li>
+      <h4>::cue</h4>
+      <p>The ::cue CSS pseudo-element matches WebVTT cues within a selected element.<br>
+        This can be used to style captions and other cues in media with VTT tracks.<br>
+        The properties are applied to the entire set of cues as if they were a single unit. <br>
+        The only exception is that background and its longhand properties apply to each cue individually,<br>
+        to avoid creating boxes and obscuring unexpectedly large areas of the media.</p>
+    </li>
+    <li>
+      <h4>::cue-region</h4>
+      <p>The ::cue-region CSS pseudo-element matches WebVTT cues within a selected element.<br>
+        This can be used to style captions and other cues in media with VTT tracks.<br>
+        The properties are applied to the entire set of cues as if they were a single unit.<br>
+        The only exception is that background and its longhand properties apply to each cue individually,<br>
+        to avoid creating boxes and obscuring unexpectedly large areas of the media.</p>
+    </li>
+
+    <li>
+      <h4>::first-letter (:first-letter)</h4>
+      <p>The ::first-letter CSS pseudo-element applies styles to the first letter of the first line of a block-level
+        element,<br>
+        but only when not preceded by other content (such as images or inline tables).</p>
+    </li>
+
+    <li>
+      <h4>::first-line (:first-line)</h4>
+      <p>The ::first-line CSS pseudo-element applies styles to the first line of a block-level element.<br>
+        The effects of ::first-line are limited by the length and content of the first line of text in the element.<br>
+        The length of the first line depends on many factors, including the width of the element, the width of the
+        document,<br>
+        and the font size of the text. ::first-line has no effect when the first child of the element,<br>
+        which would be the first part of the first line, is an inline block-level element, such as an inline table.</p>
+    </li>
+    <li><h4>::file-selector-button</h4><p>The ::file-selector-button CSS pseudo-element represents the button of an &lt;input&gt; of type="file".</p></li>
+
+    <li><h4>::grammar-error</h4>
+    <p>
+      The ::grammar-error CSS pseudo-element represents a text segment which the user agent has flagged as grammatically incorrect.
+    </p></li>
+
+    <li><h4>::marker</h4>
+    <p>
+      The ::marker CSS pseudo-element selects the marker box of a list item, which typically contains a bullet or number.<br> 
+      It works on any element or pseudo-element set to display: list-item, such as the &lt;li&gt; and &lt;summary&gt; elements.
+    </p></li>
+<li><h4>::part()</h4>
+<p>The ::part CSS pseudo-element represents any element within a shadow tree that has a matching part attribute.</p></li>
+
+<li><h4>::placeholder</h4>
+<p>The ::placeholder CSS pseudo-element represents the placeholder text in an &lt;input&gt; or &lt;textarea&gt;  element.<br>
+  Only the subset of CSS properties that apply to the ::first-line pseudo-element can be used in a rule using ::placeholder in its selector.</p></li>
+
+
+<li><h4>::selection</h4>
+<p>The ::selection CSS pseudo-element applies styles to the part of a document that has been highlighted by the user<br>
+   (such as clicking and dragging the mouse across text).</p>
+  <p>
+   Only certain CSS properties can be used with ::selection:<br>
+<br>
+   color<br>
+   background-color<br>
+   text-decoration and its associated properties<br>
+   text-shadow<br>
+   stroke-color, fill-color and stroke-width<br><br>
+   In particular, background-image is ignored.</p></li>
+<li><h4>::slotted()</h4><p>
+  The ::slotted() CSS pseudo-element represents any element that has been placed into a slot inside an HTML template<br>
+   (see Using templates and slots for more information).<br>
+<br>
+This only works when used inside CSS placed within a shadow DOM.<br> 
+Note also that this selector won't select a text node placed into a slot; it only targets actual elements.<br>
+</p></li>
+
+<li><h4>::spelling-error</h4>
+<p>The ::spelling-error CSS pseudo-element represents a text segment which the user agent has flagged as incorrectly spelled.</p></li>
+  </ul>
+
+
+</body>
+
+
+
+</html>

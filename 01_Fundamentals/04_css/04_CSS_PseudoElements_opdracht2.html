@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudo Elements Opdracht 2</title>
+
+  <style>
+
+
+
+.outer{
+    width:843px;
+    height:63px;
+    background: rgba(14, 148, 148, 0.824);
+    position:relative;
+  
+}
+
+div:before, div:after{
+    content:'';
+    position:absolute;
+    height:84%;
+    width:7%;
+}
+
+.outer:before{
+    border-left: 10px solid orangered;
+    border-top: 10px solid orangered;
+}
+
+.inner:after{
+    bottom:0; right:0;
+    border-right: 10px solid orangered;
+    border-bottom: 10px solid orangered;
+    
+}
+
+.buttonText{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 63px;
+  
+  color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+  
+
+
+}
+
+  </style>
+
+</head>
+
+<body>
+
+  <h3>Opdracht 2</h3>
+  <p>Hieronder vind je een voorbeeld van het gebruik van een pseudo-element. Kun jij dit namaken?</p>
+    <img src="images/image34.png">
+<br><br><br>
+
+
+<div class="outer">
+  <div class="buttonText"><h1>Button</h1></div>
+
+  <div class="inner"></div>
+
+  
+</div>
+
+
+</body>
+
+
+
+</html>
