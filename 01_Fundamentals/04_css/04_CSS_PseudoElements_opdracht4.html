@@ -1,38 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Elements Opdracht 4</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pseudo Elements Opdracht 4</title>
+    <style>
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+      }
 
-  <style>
- 
- .square {
-  width: 200px;
-  height: 200px;
-  background: red;
-  
-}
+      .figuur {
+        background-color: black;
+        position: relative;
+        color: white;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 200px;
+      }
 
-.circle {
-  width: 150px;
-  height: 150px;
-  background: rgb(0, 0, 0);
-  border-radius: 50%
-}
+      .figuur::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 300px;
+        height: 100px;
+        background-color: black;
+        border-radius: 500px;
+        left: -50px;
+        z-index: -1;
+      }
 
-.rectangle {
-  width: 180px;
-  height: 50px;
-  background: green;
-  border-radius: 25px;
-
-}
-  </style>
-
-</head>
+    
+    </style>
+  </head>
 
 <body>
   <h3>Opdracht 4</h3>
@@ -41,15 +48,23 @@
 
 
 
-  <div class="square"></div>
-<div class="circle"></div>
-<div class="rectangle"</div>
-
-
-</body>
 
 
 
-
-
+    <div class="container">
+      <div class="figuur">
+        <h1>1</h1>
+      </div>
+      <div class="figuur">
+        <h1>2</h1>
+      </div>
+      <div class="figuur">
+        <h1>3</h1>
+      </div>
+    </div>
+  </body>
 </html>
+
+
+
+
