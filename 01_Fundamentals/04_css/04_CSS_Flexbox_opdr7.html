@@ -7,82 +7,100 @@
     <title>Flexbox Opdracht 7</title>
 
 
+    <style>
+      * {
+        margin: 0;
+      }
 
-<style>
-.container {
-  display: flex;
-  height:100vh;
-  flex-wrap: wrap;
-  background-color: rgb(250, 249, 210);
-  max-width: 700px;
-  align-items: center;
-  justify-content: center;
- 
-}
+      .flex-container {
+        display: flex;
+        background-color: rgb(251, 255, 181);
+        height: 100vh;
+        padding: 10px;
+        align-items: center;
+        max-width: 680px;
+        max-height: 700px;
+      }
 
-.sidebar {
-  background-color: rgb(196, 165, 255);
-  flex-grow: 1;
-  margin-bottom: 5px;
-  height: 40px;
-  
-}
+      .flex-item {
+        background-color: rgb(170,174,249);
+        
+        margin-right: 10px;
+        width:70px;
+      }
 
-.sb1 {
-  flex-grow: 0;
-  width: 100px;
-}
+      .item-1 {
+        height: 100%
+      }
 
-.sb2 {
-  flex-grow: 0;
-  width: 45%;
-}
+      .item-2 {
+        height: 60%; 
+      }
 
-.sb3 {
-  flex-grow: 0;
-  width: 55%;
-}
+      .item-3 {
+        height: 70%; 
+      }
 
-.sb4 {
-  flex-grow: 0;
-  width: 65%;
-}
+      .item-4 {
+        height: 80%; 
+      }
 
-.sb5 {
-  flex-grow: 0;
-  width: 25%;
-}
+      .item-5 {
+        height: 35%; 
+      }
 
-.sb6 {
-  flex-grow: 0;
-  width: 35%;
-}
-     
+      .item-6 {
+        height: 45%;
+      }
 
-</style>
+    </style>
+    
+
 </head>
 <body>
    <h3>Opdracht 7</h3>
-
-   Maak het onderstaande na met flexbox. Properties die je o.a dient te gebruiken zijn:
-   <ul>
+  
+   Maak het onderstaande na met flexbox.<br> 
+   Properties die je o.a dient te gebruiken zijn:<br>
+   
    <li>display</li>
    <li>justify-content</li>
    <li>flex-direction</li>
    <li>align-items</li>
-  </ul>
+ 
    <img src="images/image39.png" alt="plaatje" width="700px"><br><br>
 
-   <div class="container">
-    <div class="sidebar sb1"></div>
-    <div class="sidebar sb2"></div>
-    <div class="sidebar sb3"></div>
-    <div class="sidebar sb4"></div>
-    <div class="sidebar sb5"></div>
-    <div class="sidebar sb6"></div>
 
-</div>
+
+
+
+
+
+
+
+
+
   
+   
+       
+    
+     <body>
+       <div class="flex-container">
+         <div class="flex-item item-1"></div>
+         <div class="flex-item item-2"></div>
+         <div class="flex-item item-3"></div>
+         <div class="flex-item item-4"></div>
+         <div class="flex-item item-5"></div>
+         <div class="flex-item item-6"></div>
+       </div>
+         
+ 
+
+
+
+
+
+
 
 </body>
 
