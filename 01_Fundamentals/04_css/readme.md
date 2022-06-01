@@ -129,6 +129,7 @@ Verder heb je ook nog de volgende selectors:
 * general sibling selectors
 
 Maak een .html file waar je alledrie in gebruikt
+Maak een .html file waar je alle vijf in gebruikt
 
 <br>
 

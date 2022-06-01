@@ -82,6 +82,7 @@ Paragraaf element. Standaard CSS geeft het wat ruimte boven/onder. Ook is de &lt
 ## **&lt;ul>, &lt;ol> & &lt;li>**
 
 Unordered lists & ordered lists worden erg veel gebruikt. Beiden gebruiken ze &lt;li>list item&lt;/li> om elk individueel item in de lijst te stylen. Cruciaal verschil is dat in de standaard CSS - &lt;ol> is genummerd waar &lt;ul> simpele bullet points gebruikt. Je kan lijstjes ook in elkaar nesten! Dit wordt vaak gedaan bij navigatie-menu’s.
+Unordered lists & ordered lists worden erg veel gebruikt. Beiden gebruiken ze &lt;li>list item&lt;/li> om elk individueel item in de lijst te stylen. Cruciaal verschil is in de standaard CSS - &lt;ol> is genummerd waar &lt;ul> simpele bullet points gebruikt. Je kan lijstjes ook in elkaar nesten! Dit wordt vaak gedaan bij navigatie-menu’s.
 
 <br>
 
