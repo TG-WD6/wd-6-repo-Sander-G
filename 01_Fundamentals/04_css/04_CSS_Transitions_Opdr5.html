@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions Opdracht 5</title>
+
+    <style>
+        /* ~~Reset for margins~~ */
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        * {
+            margin: 0;
+        }
+
+
+        .container {
+            display: flex;
+            position: relative;
+            align-items: flex-start;
+            justify-content: flex-start;
+            height: 240px;
+            width: 300px;
+            border: 2px solid black;
+            background-color: rgb(243, 240, 240);
+           
+            
+        }
+
+        .chico {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            position: absolute;
+            height: 130px;
+            width: 130px;
+            border: 5px solid black;
+            margin: 0px;
+            padding:0px;
+            opacity: 1;
+           
+
+            }
+
+        .chico:hover {
+        opacity: 0.5;
+        transition: opacity 2s;
+            transition-delay: 1s;
+        
+      }
+
+
+ .rotating_square {
+        height: 120px;
+        width: 120px;
+        background-color: rgb(222, 156, 189);
+        position: absolute;
+        margin-top:5px;
+        margin-left:5px;
+        transform: rotate(0deg);
+        transform-origin: 0px 250px;
+        transition: transform 1s;
+      }
+      .rotating_square:hover {
+        transform: rotate(30deg);
+      }
+   
+
+
+    </style>
+</head>
+
+<body>
+    <h3>Opdracht 5</h3>
+    <p>Hieronder zie je wederom een voorbeeld van een transition. Je kunt op verschillende properties transitions aangeven.<br>
+Zoek uit op welke properties de transitions zitten en maak het na.<br> Je eigen creativiteit gebruiken is uiteraard toegestaan.</p>
+<img src="images/image20.gif" alt="voorbeeldplaatje"><br>
+
+<div class="container">
+    <div class="chico"><h2>Chico!</h2><br>
+       <img src="images/chico_tong.png" height="90px">
+    </div>
+         <div class="rotating_square"></div>
+    
+</div>
+</html>
