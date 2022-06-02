@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Opdracht 3
+Schrijf een media query om een logo van een hogere kwaliteit te tonen als de bezoeker naar de Amazing Space website kijkt 
+op een scherm met hoge resolutie. Een beeldscherm met hoge resolutie heeft mogelijk een min-resolutie van 150 dpi. 
+Het hogere kwaliteit logo is het andere bijgevoegde plaatje.
+
+Als je je pagina opent op een scherm met een resolutie groter dan 150 dpi, zul je de verandering van het logo zien. 
+Als dit niet het geval is (omdat je een kleinere resolutie hebt), 
+kun je in de media query de min-resolution op een lagere waarde zetten om de verandering te zien.-->
+
+<head>
+    <title>Responsive opdr. 3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="04_CSS_Responsive_Opdr3.css">
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700" rel="stylesheet">
+   
+</head>
+
+<body>
+    <header>
+        <div class="page-title">
+            <div class="logo"></div>
+            <h1>Amazing Space</h1>
+            <h5>At Amazing Space, there's always space for you.&trade;</h5>
+        </div>
+    </header>
+    <div class="main">
+        <p class="page-description clearfix">
+            Otherworldly views, uncompromising service, unparallelled luxury. This is Amazing Space, the world's first,
+            and finest, space adventure company. With private and group voyages embarking weekly, you can book your
+            tickets in advance or on the fly.
+            <a class="learn-more" href="#">Learn More >></a>
+        </p>
+        <div class="gallery">
+            <figure class="gallery-item">
+                <img class="thumbnail"
+                    src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-3/space01.jpg">
+            </figure>
+            <figure class="gallery-item">
+                <img class="thumbnail"
+                    src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-3/space02.jpg">
+            </figure>
+            <figure class="gallery-item">
+                <img class="thumbnail"
+                    src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-3/space03.jpg">
+            </figure>
+            <figure class="gallery-item">
+                <img class="thumbnail"
+                    src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-3/space04.jpg">
+            </figure>
+            <figure class="gallery-item">
+                <img class="thumbnail"
+                    src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-3/space05.jpg">
+            </figure>
+            <figure class="gallery-item">
+                <img class="thumbnail"
+                    src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-3/space06.jpg">
+            </figure>
+            <figure class="gallery-item">
+                <img class="thumbnail"
+                    src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-3/space07.jpg">
+            </figure>
+            <figure class="gallery-item">
+                <img class="thumbnail"
+                    src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-3/space08.jpg">
+            </figure>
+        </div>
+    </div>
+    <nav class="footer">
+        <ul>
+            <li>ABOUT</li>
+            <li>MISSIONS</li>
+            <li>ARCHIVE</li>
+        </ul>
+        <div class="contact-btn">
+            <a>CONTACT US</a>
+        </div>
+    </nav>
+</body>
+
+</html>
