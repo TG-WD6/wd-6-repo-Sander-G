@@ -1,0 +1,45 @@
+.button {
+  background-color: #276950;
+  color: black;
+  width: 200px;
+  height: 70px;
+  border-radius: 30px;
+  font-size: large;
+  font-weight: 800;
+}
+
+.button:hover {
+  background-color: #0253a0;
+  color: yellow;
+}
+
+.button {
+  border-radius: 10px;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: #276950;
+  color: yellow;
+}
+
+.button:hover {
+  background-color: #0253a0;
+  color: red;
+}
+
+.colorChangingSquare {
+  margin: 20px;
+  height: 100px;
+  width: 100px;
+  background-color: #ca1919;
+  -webkit-transition: background-color 1s;
+  transition: background-color 1s;
+}
+
+.colorChangingSquare:hover {
+  margin: 20px;
+  height: 100px;
+  width: 100px;
+  background-color: #0253a0;
+  -webkit-transition: background-color 1s;
+  transition: background-color 1s;
+}
