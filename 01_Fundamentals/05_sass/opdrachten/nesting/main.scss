@@ -1,4 +1,44 @@
 @import url(https://fonts.googleapis.com/css?family=Pacifico);
+
+
+// Variables - opdracht 1 - Bovenin je .scss document maak je een nieuwe variabele aan met de naam ‘translucent-white’ 
+//en die geef je de waarde ‘rgba(255,255,255,0.3)’.
+$translucent-white: rgba(255,255,255,0.3);
+
+// Variables - opdracht 2 - Er zijn verschillende datatypen die je aan een variabele in SASS kunt toewijzen. 
+//Naast het datatype voor kleur dat we hierboven hebben gezien, zijn er ook:
+//Numbers, zoals 8.11 of 12 of bijv. 10px. 
+//      Merk op dat hoewel 10 een eenheid van px heeft, het nog steeds als een getal wordt gelezen.
+//Strings, met en zonder aanhalingstekens. Enkele voorbeelden zijn "aardappel", 'tomaat' of span.
+//Booleans, of simpelweg ‘true’ en ‘false’.
+//Null, wat als een lege waarde wordt beschouwd.
+//
+//Maak een nieuwe variabele aan van het type number 
+//met de naam icon-square-length en geef die een waarde 300px.
+$icon-square-length: number(300px);
+
+//Variables - opdracht 3 - Bovenin je .scss document maak je een nieuwe variabele aan van het type list
+//met de naam ‘standard-border’ en geef die een waarde ‘4px solid black’.
+//
+//Zoek nu alle properties die de waarde ‘4px solid black’ gebruiken in je .scss en vervang ze 
+//door de ‘standard-border’ variabele die je zojuist hebt gemaakt.
+$standard-border: (4px solid black);
+
+
+
+
+@import "./style.scss";
+// Partials & Modules - Opdr 1 t/m 4
+// -> zie /assets/styling _button.scss & _colors.scss
+// & style.scss, aangepaste kleurtjes van button op pagina.
+// Gewijzigde kleuren van de button, 
+//alleen de achtergrondkleur bij zowel de reguliere selector als bij de hover.
+
+// Partials & Modules - Opdr. 5 - lees volgede artikel
+// https://itnext.io/structuring-your-sass-projects-c8d41fa55ed4
+
+
+
 h1 {
     font-family: Roboto, sans-serif;
     text-align: center;
@@ -8,9 +48,66 @@ h1 {
     font-family: "Pacifico", cursive;
     height: 400px;
     background-image: url("lemonade.jpg");
+// Nesting - Opdracht 1 - Nest de slogan selector in de banner selector en geef de slogan selector de volgende values: 
+
+        .slogan {
+            position: absolute;
+            border: $standard-border;
+            top: 200px;
+            left: 25%;
+            width: 50%;
+            height: 200px;
+            text-align: center;
+            background-color: $translucent-white;
+            // Nesting - Opdracht 2 - Nest de span selector in de slogan selector en geef de span selector de volgende values:
+         .span{       
+            font-size: 24px;
+            line-height: 200px;
+        }
+
+        }
+
 }
 
 .container {
     text-align: center;
     font-family: "Pacifico", cursive;
-}
+// Nesting - Opdracht 3 - Nest de icon selector in de container selector en geef de icon selector de volgende values:
+        .icon {
+            display: inline-block;
+            margin: 2%;
+            border: $standard-border;
+            font-size: 32px;
+            width: $icon-square-length;
+            height: $icon-square-length;
+            
+        }   
+        &:hover {
+            color: red;
+          }     
+        }
+    
+
+//Opdracht 4 - Nesten met de reference selector - the ampersand ( & )
+//De ‘&’ is een ontzettend handige feature in SASS. Je gebruikt het bij het nesten.
+//Het kan je veel tijd besparen bij het coderen. 
+
+//.alert {
+
+// The parent selector can be used to add pseudo-classes to the outer
+// selector.
+// &:hover {
+//  font-weight: bold;
+//  }
+
+//Kun jij uitzoeken wat je met de ‘&’ kunt en wat de voordelen ervan zijn? 
+//Laat met een voorbeeld zien dat je begrijpt wat het voordeel is van 
+//het gebruik van ‘&’ bij het nesten.
+
+// sass-lang.com: 
+// The parent selector, &, is a special selector invented by Sass that’s used 
+//in nested selectors to refer to the outer selector. It makes it possible to 
+//re-use the outer selector in more complex ways, like adding a pseudo-class or
+// adding a selector before the parent.
+
+
