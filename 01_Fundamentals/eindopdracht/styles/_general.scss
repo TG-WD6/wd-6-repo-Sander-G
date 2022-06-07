@@ -1,0 +1,24 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body { 
+    margin:0;
+    background-color: $tertiary-color;
+}
+
+.root {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 150px 1fr; 
+    grid-template-rows: 50px 1fr; 
+
+    
+}
+
+
+// pagina onderdelen: display none.. voor overzicht
+
+ header, aside, main { 
+    display: none;
+ }

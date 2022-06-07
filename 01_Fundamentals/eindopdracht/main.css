@@ -1,0 +1,109 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: beige;
+}
+
+.root {
+  display: -ms-grid;
+  display: grid;
+  min-height: 100vh;
+  -ms-grid-columns: 150px 1fr;
+      grid-template-columns: 150px 1fr;
+  -ms-grid-rows: 50px 1fr;
+      grid-template-rows: 50px 1fr;
+}
+
+header, aside, main {
+  display: none;
+}
+
+.navbar {
+  padding: 5px 10px;
+  background-color: purple;
+  -ms-grid-row: 1;
+  grid-row: 1 / 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar__logo {
+  max-height: 100%;
+}
+
+.navbar input {
+  display: none;
+}
+
+.navbar__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: none;
+}
+
+.navbar__list li {
+  padding: 10px 15px;
+}
+
+.navbar__list li a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar__list.active {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: purple;
+}
+
+@media (min-width: 500px) {
+  .navbar__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.navbar__toggle {
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.navbar__toggle span {
+  background-color: white;
+  height: 5px;
+  width: 35px;
+}

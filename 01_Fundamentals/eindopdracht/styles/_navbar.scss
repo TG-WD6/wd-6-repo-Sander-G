@@ -1,0 +1,67 @@
+.navbar {
+    padding: 5px 10px;
+    background-color: $primary-color;
+    grid-row: 1 / 1;
+    grid-column: 1 / span 2; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    &__logo {
+        max-height: 100%;
+    }
+
+
+    input { 
+        display: none;
+    }
+
+   
+   
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: none;
+        
+        li { padding: 10px 15px;
+            a { color: white;
+                text-decoration: none;
+            }
+            
+        }
+
+        &.active {
+            position: absolute;
+            top: 50px;
+            left:0;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            background-color: $primary-color;
+
+        }
+
+        @media (min-width: 500px) {
+            display: flex;
+        }
+    }
+    &__toggle {
+            height: 35px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+
+        span {
+            background-color: white;
+            height: 5px;
+            width: 35px;
+
+        }
+    }
+
+}
+
+
