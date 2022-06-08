@@ -6,6 +6,8 @@
 body {
   margin: 0;
   background-color: beige;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1;
 }
 
 .root {
@@ -16,10 +18,6 @@ body {
       grid-template-columns: 150px 1fr;
   -ms-grid-rows: 50px 1fr;
       grid-template-rows: 50px 1fr;
-}
-
-header, aside, main {
-  display: none;
 }
 
 .navbar {
@@ -39,14 +37,22 @@ header, aside, main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /* Hide the checkbox control */
+  /* Set up the top and bottom lines of the hamburger icon */
+  /* Place the bottom line 8px below the middle */
+  /* Place the top line 8px above the middle line */
+  /* Set the middle line's transition to be instantaneous and to start */
+  /* 0.2 seconds after the transition is applied */
+  /* Apply styles to the top and bottom lines */
+  /* Hide the middle line when the control is selected */
+  /* Set up the forward animation for the top and bottom lines. */
+  /* Rotate the top line by 45 degrees */
+  /* Rotate the bottom line by 45 degrees in the opposite direction */
 }
 
 .navbar__logo {
   max-height: 100%;
-}
-
-.navbar input {
-  display: none;
+  max-width: 200px;
 }
 
 .navbar__list {
@@ -65,22 +71,7 @@ header, aside, main {
   text-decoration: none;
 }
 
-.navbar__list.active {
-  position: absolute;
-  top: 50px;
-  left: 0;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-color: purple;
-}
-
-@media (min-width: 500px) {
+@media (min-width: 552px) {
   .navbar__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -88,22 +79,101 @@ header, aside, main {
   }
 }
 
-.navbar__toggle {
-  height: 35px;
+.navbar #hamburger-menu-checkbox ~ label {
+  /* Show the 'hand' cursor when the user hovers over the icon */
+  cursor: pointer;
+  /* Increase the hit area of the icon */
+  padding: 8px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 2;
 }
 
-.navbar__toggle span {
+.navbar #hamburger-menu-checkbox {
+  display: none;
+}
+
+.navbar #hamburger-menu-checkbox ~ label span {
+  display: inline-block;
+  width: 32px;
+  height: 4px;
   background-color: white;
-  height: 5px;
-  width: 35px;
+  border-radius: 3px;
+  margin-left: var(--space-small);
+}
+
+@media (min-width: 552px) {
+  .navbar #hamburger-menu-checkbox ~ label span {
+    display: none;
+  }
+}
+
+.navbar #hamburger-menu-checkbox ~ label span::after,
+.navbar #hamburger-menu-checkbox ~ label span::before {
+  content: '';
+  position: absolute;
+  width: 32px;
+  height: 4px;
+  background-color: white;
+  border-radius: 3px;
+}
+
+.navbar #hamburger-menu-checkbox ~ label span::after {
+  margin-top: 8px;
+}
+
+.navbar #hamburger-menu-checkbox ~ label span::before {
+  margin-top: -8px;
+}
+
+.navbar #hamburger-menu-checkbox ~ label span {
+  -webkit-transition-duration: 0s;
+          transition-duration: 0s;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.navbar #hamburger-menu-checkbox ~ label span::after,
+.navbar #hamburger-menu-checkbox ~ label span::before {
+  /* Set the transition time for the top and bottom lines to 0.2s. */
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  /* Set the transition properties as we need these lines to animate */
+  /* upwards or downwards as applicable and then rotate */
+  -webkit-transition-property: margin, -webkit-transform;
+  transition-property: margin, -webkit-transform;
+  transition-property: margin, transform;
+  transition-property: margin, transform, -webkit-transform;
+  /* These styles are applied in the unselected state of the */
+  /* control, so we need to setup the reverse animation here. */
+  /* This property animates the transform (rotation) immediately */
+  /* and the margin 0.2s later, as is needed when going from the */
+  /* cross to the hamburger icon */
+  -webkit-transition-delay: 0.2s, 0s;
+          transition-delay: 0.2s, 0s;
+}
+
+.navbar #hamburger-menu-checkbox:checked ~ label span {
+  background-color: transparent;
+}
+
+.navbar #hamburger-menu-checkbox:checked ~ label span:before,
+.navbar #hamburger-menu-checkbox:checked ~ label span:after {
+  -webkit-transition-delay: 0s, 0.2s;
+          transition-delay: 0s, 0.2s;
+  margin-top: 0;
+}
+
+.navbar #hamburger-menu-checkbox:checked ~ label span:before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.navbar #hamburger-menu-checkbox:checked ~ label span:after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
