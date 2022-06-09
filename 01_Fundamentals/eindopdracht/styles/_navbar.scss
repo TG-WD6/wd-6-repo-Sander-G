@@ -31,6 +31,8 @@
 
             }
 
+
+           
 // geanimeerde hamburger..
     #hamburger-menu-checkbox ~ label {
         /* Show the 'hand' cursor when the user hovers over the icon */
@@ -47,7 +49,16 @@
       /* Hide the checkbox control */
 #hamburger-menu-checkbox {
     display: none;
-        
+
+    &:checked{
+
+      &~.navbar__list,
+      &~.navbar_list li {
+        transform: translateX(0);
+      }
+    }
+       // hier moet nog een navbar div komen voor mobiele
+       // weergave van menu 
   }
 
   #hamburger-menu-checkbox ~ label span {

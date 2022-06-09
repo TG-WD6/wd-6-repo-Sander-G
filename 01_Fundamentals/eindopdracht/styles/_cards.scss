@@ -1,0 +1,175 @@
+
+// container wrapper
+.product-cards__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    width: 100%;
+    margin: 3rem auto;
+    background-color: white;
+}
+// product card wrapper
+.product-card {
+    display: flex;
+    width: 80vw;
+    height: 200px;
+    padding-right: 10px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $tertiary-color;
+
+
+    // produktfoto div
+    &__img {
+        min-width: 165px;
+        min-height: 165px;
+        background-color: grey;
+        margin: 20px;
+
+    }
+
+    // produktomschrijving div
+    &__txtbox {
+        width: 30vw;
+        height: 165px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        color: rgb(15, 17, 19);
+        margin: 20px 20px;
+
+    }
+
+    &__title {
+        font-weight: lighter;
+
+    }
+
+    &__sub-title {
+        text-align: left;
+        font-weight: bolder;
+        margin-top: 0.25rem;
+        margin-bottom: 0.25rem;
+    }
+
+    &__product-description {
+        font-weight: lighter;
+        overflow: hidden;
+
+    }
+
+    // prijs div
+    &__price-box {
+        width: 20vw;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &__product-price {
+        color: red;
+        font-size: 150%;
+        font-weight: bold;
+    }
+
+    &__price-cents {
+        font-size: 65%;
+        position: relative;
+        top: -6px;
+        left: -9px;
+    }
+
+    // voor 23 uur besteld
+    &__nextday {
+        color: green;
+    }
+
+    // winkelmandje button
+    &__cart-btn {
+        background-color: #ffdc4d;
+        width: 111px;
+        height: 48px;
+        border: none;
+
+        &::after {
+            content: '';
+            position: absolute;
+            background-image: url(./images/basket.png);
+
+            height: 48px;
+            width: 111px;
+            margin-top: -23px;
+            margin-left: -55px;
+
+        }
+
+        &::before {
+            content: '+';
+            position: absolute;
+            font-size: 280%;
+            margin-left: -35px;
+            margin-top: -17px;
+            z-index: 2;
+            color: rgb(0, 0, 0);
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+
+
+// media query voor scherm < 680px
+@media screen and (max-width: 680px) {
+    .product-card {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 90vw;
+        height: auto;
+  
+
+        &__img {
+            align-self: center;
+        }
+
+        &__txtbox {
+            width: 90vw;
+            height: auto;
+            align-self: center;
+        }
+
+        &__title,
+        &__sub-title {
+            text-align: center;
+            margin-top: 0.25rem;
+            margin-bottom: 0.25rem;
+        }
+
+        &__product-description {
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        &__price-box {
+            width: 90vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__product-price {
+            align-self: flex-end;
+            margin: 0px 5em 0px 0px;
+        }
+
+        &__nextday {
+            margin: 0.5rem;
+        }
+    }
+  
+}
