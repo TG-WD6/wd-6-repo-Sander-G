@@ -6,19 +6,20 @@
     align-items: center;
     justify-content: center;
     height: 600px;
-    width: 100%;
-    margin: 3rem auto;
-    background-color: white;
+    width: 90vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    background-color: $secondary-color;
 }
 // product card wrapper
 .product-card {
     display: flex;
-    width: 80vw;
+    width: 90vw;
     height: 200px;
     padding-right: 10px;
     align-items: center;
     justify-content: space-between;
-    background-color: $tertiary-color;
+    background-color: $secondary-color;
 
 
     // produktfoto div
