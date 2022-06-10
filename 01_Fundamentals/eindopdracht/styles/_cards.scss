@@ -1,14 +1,15 @@
 
 // container wrapper
 .product-cards__wrapper {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 600px;
-    width: 90vw;
-    margin-left: 5vw;
-    margin-right: 5vw;
+    height: auto;
+    width: 100vw;
+    
     background-color: $secondary-color;
 }
 // product card wrapper

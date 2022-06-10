@@ -14,20 +14,21 @@ body {
   display: -ms-grid;
   display: grid;
   min-height: 100vh;
-  -ms-grid-columns: 150px 1fr;
-      grid-template-columns: 150px 1fr;
-  -ms-grid-rows: 50px 1fr;
-      grid-template-rows: 50px 1fr;
+  -ms-grid-rows: 50px auto;
+      grid-template-rows: 50px auto;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
 }
 
 .navbar {
   padding: 5px 10px;
   background-color: purple;
   -ms-grid-row: 1;
-  grid-row: 1 / 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-column: 1 / span 2;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -71,7 +72,7 @@ body {
   text-decoration: none;
 }
 
-@media (min-width: 552px) {
+@media (min-width: 680px) {
   .navbar__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -112,7 +113,7 @@ body {
   margin-left: var(--space-small);
 }
 
-@media (min-width: 552px) {
+@media (min-width: 680px) {
   .navbar #hamburger-menu-checkbox ~ label span {
     display: none;
   }
@@ -185,6 +186,12 @@ body {
 }
 
 .product-cards__wrapper {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3 / 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -198,10 +205,8 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 600px;
-  width: 90vw;
-  margin-left: 5vw;
-  margin-right: 5vw;
+  height: auto;
+  width: 100vw;
   background-color: white;
 }
 
@@ -382,6 +387,12 @@ body {
 }
 
 .login {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -477,15 +488,19 @@ body {
 }
 
 .footer__wrapper {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4 / 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 90vw;
-  margin-left: 5vw;
-  margin-right: 5vw;
+  width: 100vw;
   background-color: white;
   padding: 1em;
 }

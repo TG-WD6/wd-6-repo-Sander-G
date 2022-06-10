@@ -1,9 +1,9 @@
 .footer__wrapper{
+    grid-row: 4 / 5;
+    grid-column: 1 / 2; 
     display: flex;
     justify-content: space-between;
-    width: 90vw;
-    margin-left: 5vw;
-    margin-right: 5vw;
+    width: 100vw;
     background-color: $secondary-color;
     padding: 1em;
 }
@@ -47,7 +47,7 @@
 }
 
 
-// media query for screen < 680px
+// media query for screen > 450 & < 680px
 
 
 @media screen and (min-width:450px) and (max-width:680px){
