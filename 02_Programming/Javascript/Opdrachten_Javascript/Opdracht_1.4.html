@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Opdracht 1.4</title>
+
+  
+
+
+
+</head>
+<body>
+
+
+
+
+
+
+    <h4>Opdracht 1.4</h4>
+ 
+<p>1. Wat komt er uit het volgende?</p>
+
+    <!--1,2 <script>
+    let increment = 1;
+    console.log(increment++)
+    console.log(++increment)
+    </script> -->
+
+
+<p> som van increment = 2</p>
+
+<p>2. Wat komt er uit als je de console.log() hierboven omdraait? </p>
+<p> som van increment = 2 + increment = 3</p>
+
+<p>3 Wat komt er uit het volgende?</p>
+
+<!--3 <script>
+    let modulo = 24 % 10;
+    console.log(modulo)
+    </script> -->
+
+<p>modulo is de remainder operatie, 24/10, 2x10, restant = 4</p>
+
+    <!--3 <script>
+    let division = 24 / 10;
+    console.log(division)
+    </script> -->
+<p>division is de quotient operatie, 24/10 = 2.4</p>
+
+<p>4. Wat komt er uit het volgende?</p>
+
+
+    <!--4,5 <script>
+
+        let someNumber = undefined;
+        console.log( ! someNumber)
+    </script> -->
+
+<p>! symbol is used to indicate whether the expression defined is false or not.<br> 
+For example, !( 5==4) would return true , since 5 is not equal to 4.<br>
+The equivalent in English would be not </p><br>
+<p> De output is False Tekst is niet gelijk aan someNumber</p>
+
+
+<p>5. Wat komt er uit bovenstaand als je de waarde van someNumber verandert in:</p>
+<br>
+<p>5</p>
+<p>False: 5 is niet gelijk aan 'someNumber'</p>
+<p>Boolean</p>
+<p>False: Boolean is niet gelijk aan 'someNumber'</p>
+<p>false</p>
+<p>True: 'someNumber = false' is niet gelijk aan 'someNumber'</p>
+<p>"false"</p>
+<p>False: 'false' is niet gelijk aan 'someNumber'</p>
+<p>"true"</p>
+<p>False: 'someNumber = true' is niet gelijk aan 'someNumber'</p>
+<p>"null"</p>
+<p>True: 'null' is niet gelijk aan 'someNumber'</p>
+<p>undefined</p>
+<p>True: undefined is niet gelijk aan 'someNumber'</p>
+
+
+
+<script>
+    let a = 2;
+    let b = 'hello';
+    
+    console.log(a += 3); // addition
+    // expected output: 5
+    
+    console.log(b += ' world'); // concatenation
+    // expected output: "hello world"
+
+</script>
+<p>6. Zoek op of experimenteer wat "+=" doet. Werkt deze ook met Strings?<br>
+    Weet je hoe je deze anders kan schrijven?</p>
+<p>Addition telt de waarde van een optelling bij een variabele op<br>
+     en het resultaat is de nieuwe waarde van de variabele.</p>
+
+
+<li>The addition assignment operator (+=) adds the value of the right operand to a variable and assigns the result to the variable.</li>
+<li> The types of the two operands determine the behavior of the addition assignment operator. Addition or concatenation is possible.</li>
+
+<p>Doe hetzelfde voor "-=", "*=", "/=", "%=" en "**=".</p>
+
+<p>-= : Subtraction assignment</p>
+<p> Identiek aan addition assignment operator</p>
+<p>*= : Multiplication assignment</p>
+<p>multiplies a variable by the value of the right operand and assigns the result to the variable.</p>
+<p>%= : Remainder assignment</p>
+<p>divides a variable by the value of the right operand and assigns the remainder to the variable.</p>
+<!-- <style>
+
+let a = 3;
+
+console.log(a %= 2);
+// expected output: 1
+
+console.log(a %= 0);
+// expected output: NaN
+
+console.log(a %= 'hello');
+// expected output: NaN
+</style> -->
+
+<p>**= : Exponentiation assignment</p>
+<p>The exponentiation assignment operator (**=) raises the value of a variable to the power of the right operand.</p>
+
+
+<!-- <style>let a = 3;
+
+    console.log(a **= 2);
+    // expected output: 9
+    
+    console.log(a **= 0);
+    // expected output: 1
+    
+    console.log(a **= 'hello');
+    // expected output: NaN
+    </style> -->
+
+
+</body>
+</html>

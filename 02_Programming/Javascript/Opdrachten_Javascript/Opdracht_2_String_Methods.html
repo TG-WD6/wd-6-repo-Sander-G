@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Methods - Opdracht 2</title>
+
+  
+
+
+
+</head>
+<body>
+
+
+
+
+
+
+    <h4>String Methods</h4>
+    <p>Opdracht 2.1</p>
+ 
+<p>1. Splits de String met een string method op in 2 aparte zinnen.<br>
+     Stop beiden in een aparte variabele.</p>
+
+<!-- <script>
+let someKittens = "De poes van de buurman heeft kittens gehad! Hij vraagt of wij nog kittens willen.";
+let firstLine = someKittens.slice( 0, 43);
+let secondLine = someKittens.slice(44);
+console.log(firstLine);
+console.log(secondLine);
+</script>    -->
+
+<!--oplossing bart: 
+    let eersteZin = someKittens.slice(0, someKittens.indexOf("!") + 1); -->
+
+
+<p>2. Zo’n geweldig nieuws verdient upper case. Zet someKittens om naar hoofdletters.</p>
+
+<!-- <script>
+    let someKittens = "De poes van de buurman heeft kittens gehad! Hij vraagt of wij nog kittens willen.";
+    console.log( someKittens.toUpperCase());
+    </script> -->
+
+
+
+<p>3. Geef de eerste en laatste index van het woord “kittens” in de variabele someKittens.</p>
+<!-- <script>
+let someKittens = "De poes van de buurman heeft kittens gehad! Hij vraagt of wij nog kittens willen.";
+console.log( someKittens [29] );
+console.log( someKittens [35] );
+</script> -->
+
+<p>4. Gebruik charAt() op beiden. Welk teken krijg je terug?</p>
+
+<!-- <script>
+    let someKittens = "De poes van de buurman heeft kittens gehad! Hij vraagt of wij nog kittens willen.";
+    console.log( someKittens.charAt(29) );
+    console.log( someKittens.charAt(35) );
+</script> -->
+
+
+
+<br>
+<p>Opdracht 2.2</p>
+<p>substring() en slice() lijken erg op elkaar. We onderzoeken de verschillen.<br>
+    Test dit met een eigen string, of gebruik het vorige voorbeeld.<br>
+substring() en slice() kunnen 2 waardes meegegeven worden -<br> 
+een index waar de nieuwe waarde begint en een index waar deze moet eindigen.</p><br>
+<p>1. Wat doet substring() als het eerste getal hoger is dan het tweede getal?</p>
+<li> substrings kunnen een deel van een string selecteren/extracten</li>
+<li> als beginwaarde argument groter is dan eindwaarde, worden argumenten gewisseld: (4, 1) = (1, 4).</li>
+
+
+<!-- <script>
+    let someKittens = "De poes van de buurman heeft kittens gehad! Hij vraagt of wij nog kittens willen.";
+    console.log(  someKittens.substring (29, 36));
+   
+</script> -->
+
+<!-- <script>
+    let someKittens = "De poes van de buurman heeft kittens gehad! Hij vraagt of wij nog kittens willen.";
+    console.log(  someKittens.substring (36, 23));   
+</script> -->
+
+<p>2. Wat doet slice() als het eerste getal hoger is dan het tweede getal?</p>
+<li> geeft geen output</li>
+
+<!-- <script>
+    let someKittens = "De poes van de buurman heeft kittens gehad! Hij vraagt of wij nog kittens willen.";
+    let firstLine = someKittens.slice( 9,3);
+    console.log(firstLine);
+</script>    -->
+
+<p>Deze waardes hoeven niet per se positief te zijn - je kan ook negatieve getallen meegeven.</p>
+
+<p>3. Wat doet substring() bij negatieve waardes?</p>
+<p> het resultaat vanaf het laatste character -waarde, van links naar rechts
+    met evt. een lengte </p>
+
+<!-- <script>
+    let someKittens = "De poes van de buurman heeft kittens gehad! Hij vraagt of wij nog kittens willen."; 
+     console.log(someKittens.substr(-16, 7));
+</script> -->
+
+<p>4. Wat doet slice() bij negatieve waardes?</p>
+<p> het resultaat vanaf het laatste karakter, van links naar rechts weergeven waarbij het 
+    eerste getal een groter negatief getal is dan het laatste, 
+</p>
+
+<!-- <script>
+    let someKittens = "De poes van de buurman heeft kittens gehad! Hij vraagt of wij nog kittens willen."; 
+     console.log(someKittens.slice(-16, -1));
+</script> -->
+
+<br>
+<p>Opdracht 2.3</p>
+
+
+<p>Gebruik split() om alle woorden apart in een Array te zetten.</p>
+<script>
+    let someKittens = "Die nieuwe kittens zijn zo schattig!";
+    const MyArray = someKittens.split(" ");
+    console.log(MyArray);
+
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditions / Opdracht 3</title>
+
+  
+
+
+
+</head>
+<body>
+
+    <h4>Conditions</h4>
+
+    <!-- <script> 
+    let someValue = true;
+
+    if (someValue) {
+        console.log("Zie je de eerste?");
+    }
+    
+    if (!someValue) {
+        console.log("Zie je de tweede?")
+    }
+
+    </script> -->
+
+
+    
+    <!-- <script> 
+        let someValue = false;
+    
+        if (someValue) {
+            console.log("Zie je de eerste?");
+        }
+        
+        else  {
+            console.log("Zie je de tweede?")
+        }
+        
+        </script> -->
+
+        <!-- Met een If … Else … geef je dus geen optionele code meer aan. 
+    Als de conditie niet klopt, wordt de eerste code uitgevoerd,
+     en anders de tweede. Je kan dit zien als een splitsing op een pad
+    - als je verder wil moet je 1 van de 2 kiezen en daarin verder. -->
+
+  
+
+    <p>Conditions werken erg vaak met operators.<br>
+Om goed met conditions te kunnen werken, moet je operators echt goed begrijpen.<br>
+ Daarom onderzoeken we ze hier nogmaals:</p>
+
+ <h4>Opdracht 3.1</h4>
+ <p>1. Wat is het verschil tussen == en ===?</p>
+ <p> == -> Abstract Equality Comparision : vergelijken van twee variabelen, negeert het datatype</p>
+ <p> === -> Strict Equality Comparision : vergelijken van 2 variabelen waarbij datatype ook gelijk moet zijn </p>
+ <br>
+<p>2. Wat is het verschil tussen > en >=? En tussen &lt; en &lt;=?</p>
+<p> > :groter dan; vs >= :groter dan of gelijk aan.</p>
+<p> &lt;  :kleiner dan; vs &lt;= :kleiner dan of gelijk aan.</p>
+<br>
+
+
+<!-- <script>
+    let x = 4;
+    let y = 8;
+    if ( ) {
+        console.log("Result!");
+    }
+
+</script> -->
+<p>3. Schrijf de If conditie zo, dat je alleen “Result!” ziet als x==4 en y==8</p>
+
+<!-- <script>
+    let x = 4;
+    let y = 8;
+    if (x == 4 && y == 8 ) {
+        console.log("Result!");
+    }
+
+</script> -->
+
+
+<p>4. Schrijf het nu zo dat je alleen “Result!” ziet als x==4 OF y==8</p>
+
+<!-- <script>
+    let x = 4;
+    let y = 8;
+    if (x == 4 || y == 8 ) {
+        console.log("Result!");
+    }
+
+</script> -->
+
+<p>5. Zet nu de console.log(“Results”) in een Else { } na de If.<br>
+    Kan je de conditie omdraaien zodat je alsnog “Results!” te zien krijgt?</p>
+
+<!-- <script>
+    let x = 4;
+    let y = 8;
+    if (!x == 4 || !y == 8 ) {
+        console.log("No Result!")}
+    else {
+        console.log("Result!")
+    }
+
+</script> -->
+
+<p>6. Kan je het vorige antwoord ook geven zonder || te gebruiken?</p>
+
+<!-- <script>
+    let x = 4;
+    let y = 8;
+    if (!x == 4 && !y == 8 ) {
+        console.log("No Result!")}
+    else {
+        console.log("Result!")
+    }
+
+</script> -->
+<p>Schrijf voor de volgende opdrachten 1 If/Else die 1 variabele waarde controleert,<br>
+    en zorg voor het volgende:</p>
+<p>7. Log het in je console als de waarde groter dan 5 EN kleiner dan 10 is.</p>
+ 
+
+<!-- <script>
+    let x = 7;
+    
+    if (x >= 5 && x <= 10 ) {
+        console.log("tussen 5 en 10")}
+    else {
+        console.log("niet tussen 5 en 10")
+    }
+
+</script> -->
+
+<p>8. Zo niet, log dan in je console als de waarde 11 of groter EN 20 of kleiner is.</p>
+
+<!-- <script>
+    let x = 12;
+    
+    if (x >= 11 && x <= 20 ) {
+        console.log("tussen 11 en 20")}
+    else {
+        console.log("niet tussen 11 en 20")
+    }
+
+</script> -->
+
+<p> 9. Zo niet, log dan in je console als de waarde 21 of 23 is.</p>
+
+<!-- <script>
+    let x = 21;
+    
+    if (x === 21 || x === 23 ) {
+        console.log("waarde is 21 of 23")}
+    else {
+        console.log("niet 21 en niet 23")
+    }
+
+</script> -->
+
+<p>10. Zo niet, log dan in je console als de waarde kleiner dan 35 OF tussen de 40 en 45 is.</p>
+
+<!-- <script>
+    let x = 43;
+    
+    if (x < 35 || x >=40 && x <=45 ) {
+        console.log("kleiner dan 35 of tussen 40 en 45")}
+    else {
+        console.log("niet kleiner dan 35 en niet tussen 40 en 45")
+    }
+</script> -->
+
+<p>11. Test of je bij alle uitkomsten kan komen.</p>
+    <li>getest -> werkt!</li>
+    <p>Verandert er iets als je alle If/Else omzet in aparte If blokken?</p>
+    <p> er veranderd niets behalve dat voor alle waarden een aparte if statement moet worden
+        gebruikt.
+    </p>
+
+    <!-- <script>
+        let x = 46;
+        
+        if (x < 35 || x === 40 || x === 41 || x === 42 || x ===43 || x === 44 || x === 45) 
+        
+         {
+            console.log("kleiner dan 35 of tussen 40 en 45")}
+        else {
+            console.log("niet kleiner dan 35 en niet tussen 40 en 45")
+        }
+    </script> -->
+
+    <h4>Opdracht 3.2</h4>
+    <p>We oefenen nog wat extra met grotere If/Else blokken, Switch/case en Ternary Operators.</p>
+    <p>1. Schrijf een If/Else blok die een eigen variabele controleert:</p>
+    <li> Gelijk aan 3?</li>
+    <li> Groter dan 4?</li>
+    <li> Groter dan 11?</li>
+    <li> Kleiner dan 3?</li>
+    <br>
+
+ <!-- <script>
+        let x = 2;
+        
+        if (x === 3 ) 
+        
+         {
+            console.log("het getal is 3!")
+        }
+        else if (x > 4 && x < 11 ){
+            console.log("getal is groter dan 4!")
+        }
+        else if (x > 11){
+            console.log("getal is groter dan 11!")
+        }
+        else if (x < 3){
+            console.log("getal kleiner dan 3!")
+        }
+
+    </script> -->
+
+<p>Test je variabele met 2, 3, 4, 5 en 20. Gebeurt er iets onverwachts?</p>
+<li> Er gebeurt niks onverwachts.. 2 is kleiner, 3 is exact, 4 geen output omdat er niet groter of gelijk aan 4 
+    is opgenomen, 5 groter dan 4, 20 groter dan 11 </li>
+<br>
+
+<p>3. Schrijf een If/Else die een variabele op numerieke waarde controleert,<br>
+    en de passende maand in je console logt.
+</p>
+
+<!-- <script>
+    let x = 13;
+    
+    if (x === 1 ) 
+    
+     {
+        console.log("Januari")
+    }
+    else if (x === 2 ){
+        console.log("Februari")
+    }
+    else if (x === 3 ){
+        console.log("Maart")
+    }
+    else if (x === 4 ){
+        console.log("April")
+    }
+    else if (x === 5 ){
+        console.log("Mei")
+    }
+    else if (x === 6 ){
+        console.log("Juni")
+    }
+    else if (x === 7 ){
+        console.log("Juli")
+    }
+    else if (x === 8 ){
+        console.log("Augustus")
+    }
+    else if (x === 9 ){
+        console.log("September")
+    }
+    else if (x === 10 ){
+        console.log("Oktober")
+    }
+    else if (x === 11 ){
+        console.log("November")
+    }
+    else if (x === 12 ){
+        console.log("December")
+    }
+    else if (x < 1 || x > 12 ){
+        console.log("Geen geldige maand!")
+    }
+
+</script> -->
+
+<p>4. Bouw nu opdracht 3.2.3 met een Switch/case.</p>
+ 
+<!-- <script>
+let maand = 7;
+let maandNaam;
+
+switch (maand) {
+    case 1: maandNaam = 'Januari';
+    break;
+    case 2: maandNaam = 'Februari';
+    break;
+    case 3: maandNaam = 'Maart';
+    break;
+    case 4: maandNaam = 'April';
+    break;
+    case 5: maandNaam = 'Mei';
+    break;
+    case 6: maandNaam = 'Juni';
+    break;
+    case 7: maandNaam = 'Juli';
+    break;
+    case 8: maandNaam = 'Augustus';
+    break;
+    case 9: maandNaam = 'September';
+    break;
+    case 10: maandNaam = 'Oktober';
+    break;
+    case 11: maandNaam = 'November';
+    break;
+    case 12: maandNaam = 'December';
+    break;
+
+    default: maandNaam = 'Geen geldige maand';
+}
+console.log(maandNaam);
+</script> -->
+
+<p>Gegeven onderstaande code, herschrijf als een Ternary Operator:</p>
+
+<!-- <script>
+let x = 3;
+let results;
+if (x<= 4 && x>=0) {
+    results = 2;
+} else { results = 5;
+}
+console.log(results)
+
+</script> -->
+
+
+<script>
+    let x = 4;
+    let results;
+    x >= 0 && x <= 4 ? (results = '2') : (results = '5');
+    console.log(results);
+</script>
+
+
+</body>
+</html>
