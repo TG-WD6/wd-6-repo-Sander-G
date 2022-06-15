@@ -1,11 +1,14 @@
 *, *::before, *::after {
     box-sizing: border-box;
+    font-family: "Raleway";
 }
 
 body { 
     margin:0;
     background-color: $tertiary-color;
 }
+
+
 
 .root {
     display: grid;
