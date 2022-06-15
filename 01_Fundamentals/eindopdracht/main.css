@@ -6,30 +6,29 @@
 body {
   margin: 0;
   background-color: beige;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1;
 }
 
 .root {
   display: -ms-grid;
   display: grid;
   min-height: 100vh;
-  -ms-grid-columns: 150px 1fr;
-      grid-template-columns: 150px 1fr;
-  -ms-grid-rows: 50px 1fr;
-      grid-template-rows: 50px 1fr;
-}
-
-header, aside, main {
-  display: none;
+  -ms-grid-rows: 50px auto;
+      grid-template-rows: 50px auto;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
 }
 
 .navbar {
   padding: 5px 10px;
   background-color: purple;
   -ms-grid-row: 1;
-  grid-row: 1 / 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-column: 1 / span 2;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -39,14 +38,22 @@ header, aside, main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /* Hide the checkbox control */
+  /* Set up the top and bottom lines of the hamburger icon */
+  /* Place the bottom line 8px below the middle */
+  /* Place the top line 8px above the middle line */
+  /* Set the middle line's transition to be instantaneous and to start */
+  /* 0.2 seconds after the transition is applied */
+  /* Apply styles to the top and bottom lines */
+  /* Hide the middle line when the control is selected */
+  /* Set up the forward animation for the top and bottom lines. */
+  /* Rotate the top line by 45 degrees */
+  /* Rotate the bottom line by 45 degrees in the opposite direction */
 }
 
 .navbar__logo {
   max-height: 100%;
-}
-
-.navbar input {
-  display: none;
+  max-width: 200px;
 }
 
 .navbar__list {
@@ -65,22 +72,7 @@ header, aside, main {
   text-decoration: none;
 }
 
-.navbar__list.active {
-  position: absolute;
-  top: 50px;
-  left: 0;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-color: purple;
-}
-
-@media (min-width: 500px) {
+@media (min-width: 680px) {
   .navbar__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -88,8 +80,118 @@ header, aside, main {
   }
 }
 
-.navbar__toggle {
-  height: 35px;
+.navbar #hamburger-menu-checkbox ~ label {
+  /* Show the 'hand' cursor when the user hovers over the icon */
+  cursor: pointer;
+  /* Increase the hit area of the icon */
+  padding: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 2;
+}
+
+.navbar #hamburger-menu-checkbox {
+  display: none;
+}
+
+.navbar #hamburger-menu-checkbox:checked ~ .navbar__list,
+.navbar #hamburger-menu-checkbox:checked ~ .navbar_list li {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.navbar #hamburger-menu-checkbox ~ label span {
+  display: inline-block;
+  width: 32px;
+  height: 4px;
+  background-color: white;
+  border-radius: 3px;
+  margin-left: var(--space-small);
+}
+
+@media (min-width: 680px) {
+  .navbar #hamburger-menu-checkbox ~ label span {
+    display: none;
+  }
+}
+
+.navbar #hamburger-menu-checkbox ~ label span::after,
+.navbar #hamburger-menu-checkbox ~ label span::before {
+  content: '';
+  position: absolute;
+  width: 32px;
+  height: 4px;
+  background-color: white;
+  border-radius: 3px;
+}
+
+.navbar #hamburger-menu-checkbox ~ label span::after {
+  margin-top: 8px;
+}
+
+.navbar #hamburger-menu-checkbox ~ label span::before {
+  margin-top: -8px;
+}
+
+.navbar #hamburger-menu-checkbox ~ label span {
+  -webkit-transition-duration: 0s;
+          transition-duration: 0s;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.navbar #hamburger-menu-checkbox ~ label span::after,
+.navbar #hamburger-menu-checkbox ~ label span::before {
+  /* Set the transition time for the top and bottom lines to 0.2s. */
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  /* Set the transition properties as we need these lines to animate */
+  /* upwards or downwards as applicable and then rotate */
+  -webkit-transition-property: margin, -webkit-transform;
+  transition-property: margin, -webkit-transform;
+  transition-property: margin, transform;
+  transition-property: margin, transform, -webkit-transform;
+  /* These styles are applied in the unselected state of the */
+  /* control, so we need to setup the reverse animation here. */
+  /* This property animates the transform (rotation) immediately */
+  /* and the margin 0.2s later, as is needed when going from the */
+  /* cross to the hamburger icon */
+  -webkit-transition-delay: 0.2s, 0s;
+          transition-delay: 0.2s, 0s;
+}
+
+.navbar #hamburger-menu-checkbox:checked ~ label span {
+  background-color: transparent;
+}
+
+.navbar #hamburger-menu-checkbox:checked ~ label span:before,
+.navbar #hamburger-menu-checkbox:checked ~ label span:after {
+  -webkit-transition-delay: 0s, 0.2s;
+          transition-delay: 0s, 0.2s;
+  margin-top: 0;
+}
+
+.navbar #hamburger-menu-checkbox:checked ~ label span:before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.navbar #hamburger-menu-checkbox:checked ~ label span:after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.product-cards__wrapper {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3 / 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -97,13 +199,394 @@ header, aside, main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: auto;
+  width: 100vw;
+  background-color: white;
 }
 
-.navbar__toggle span {
+.product-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90vw;
+  height: 200px;
+  padding-right: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background-color: white;
-  height: 5px;
-  width: 35px;
+}
+
+.product-card__img {
+  min-width: 165px;
+  min-height: 165px;
+  background-color: grey;
+  margin: 20px;
+}
+
+.product-card__txtbox {
+  width: 30vw;
+  height: 165px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  color: #0f1113;
+  margin: 20px 20px;
+}
+
+.product-card__title {
+  font-weight: lighter;
+}
+
+.product-card__sub-title {
+  text-align: left;
+  font-weight: bolder;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.product-card__product-description {
+  font-weight: lighter;
+  overflow: hidden;
+}
+
+.product-card__price-box {
+  width: 20vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.product-card__product-price {
+  color: red;
+  font-size: 150%;
+  font-weight: bold;
+}
+
+.product-card__price-cents {
+  font-size: 65%;
+  position: relative;
+  top: -6px;
+  left: -9px;
+}
+
+.product-card__nextday {
+  color: green;
+}
+
+.product-card__cart-btn {
+  background-color: #ffdc4d;
+  width: 111px;
+  height: 48px;
+  border: none;
+}
+
+.product-card__cart-btn::after {
+  content: '';
+  position: absolute;
+  background-image: url(./images/basket.png);
+  height: 48px;
+  width: 111px;
+  margin-top: -23px;
+  margin-left: -55px;
+}
+
+.product-card__cart-btn::before {
+  content: '+';
+  position: absolute;
+  font-size: 280%;
+  margin-left: -35px;
+  margin-top: -17px;
+  z-index: 2;
+  color: black;
+}
+
+.product-card__cart-btn:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 680px) {
+  .product-card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 90vw;
+    height: auto;
+  }
+  .product-card__img {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .product-card__txtbox {
+    width: 90vw;
+    height: auto;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .product-card__title, .product-card__sub-title {
+    text-align: center;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+  }
+  .product-card__product-description {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .product-card__price-box {
+    width: 90vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .product-card__product-price {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    margin: 0px 5em 0px 0px;
+  }
+  .product-card__nextday {
+    margin: 0.5rem;
+  }
+}
+
+.login {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 350px;
+  height: 650px;
+  margin: 3rem auto;
+  background-color: white;
+  border-radius: 3rem;
+}
+
+.login p {
+  color: grey;
+}
+
+.login .login__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 250px;
+  width: 250px;
+}
+
+.login input[type="email"], .login input[type="password"] {
+  width: 100%;
+  margin: 20px 0;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: 2px solid black;
+}
+
+.login .login__remember {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 14px 0;
+}
+
+.login button[type="submit"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 3rem;
+  color: white;
+  font-size: x-large;
+  font-weight: bold;
+  border: 0;
+  margin-top: 8px;
+  -webkit-transition: -webkit-transform 0.1s;
+  transition: -webkit-transform 0.1s;
+  transition: transform 0.1s;
+  transition: transform 0.1s, -webkit-transform 0.1s;
+  background-color: blue;
+}
+
+.login button[type="submit"]:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.login button[type="submit"] img {
+  padding-right: 10px;
+}
+
+.footer__wrapper {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4 / 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100vw;
+  background-color: beige;
+  padding: 1em;
+}
+
+.footer__heading {
+  color: black;
+  margin-bottom: 5px;
+  line-height: 150%;
+}
+
+.footer__flexbox-left a:visited, .footer__flexbox-left a:active, .footer__flexbox-left a:link {
+  color: grey;
+  text-decoration: none;
+  line-height: 150%;
+}
+
+.footer__flexbox-left li {
+  list-style-type: none;
+}
+
+.footer__flexbox-left ul {
+  padding-left: 0px;
+}
+
+.footer__stores-box, .footer__categories-box-top, .footer__categories-box-bottom {
+  margin-left: 1em;
+}
+
+.footer__flexbox-left, .footer__flexbox-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (min-width: 450px) and (max-width: 680px) {
+  .footer__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer__flexbox-left, .footer__flexbox-right {
+    width: 90vw;
+    font-size: 80%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .footer__flexbox-left {
+    width: 90vw;
+    font-size: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-left: 5vw;
+  }
+  .footer__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer__service-box,
+  .footer__stores-box,
+  .footer__categories-box-top,
+  .footer__categories-box-bottom {
+    margin-left: 0;
+  }
 }

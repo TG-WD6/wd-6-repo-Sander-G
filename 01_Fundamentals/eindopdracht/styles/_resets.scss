@@ -6,6 +6,8 @@
 body { 
     margin:0;
     background-color: $tertiary-color;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1;
 }
 
 
@@ -13,15 +15,10 @@ body {
 .root {
     display: grid;
     min-height: 100vh;
-    grid-template-columns: 150px 1fr; 
-    grid-template-rows: 50px 1fr; 
-
-    
+    grid-template-rows: 50px auto; 
+    grid-template-columns: 1fr; 
 }
 
 
-// pagina onderdelen: display none.. voor overzicht
 
- header, aside, main { 
-    display: none;
- }
+

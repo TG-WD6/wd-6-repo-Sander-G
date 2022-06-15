@@ -1,60 +1,157 @@
 .navbar {
     padding: 5px 10px;
     background-color: $primary-color;
-    grid-row: 1 / 1;
-    grid-column: 1 / span 2; 
+    grid-row: 1 / 2;
+    grid-column: 1 / 2; 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
     &__logo {
         max-height: 100%;
-    }
-   
+        max-width: 200px;
+            }
 
     &__list {
-        margin: 0;
-        padding: 0;
-        list-style-type: none;
-        display: none;
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+                display: none;
+                
         
-        li { padding: 10px 15px;
-            a { color: white;
-                text-decoration: none;
+                      li { padding: 10px 15px;
+                    a { color: white;
+                        text-decoration: none;
+                    }
+                }
+                // media query - vanaf 680px desktop menu te laten zien.
+                @media (min-width: 680px)
+                {display: flex;
+                }
+
             }
+
+
+           
+// geanimeerde hamburger..
+    #hamburger-menu-checkbox ~ label {
+        /* Show the 'hand' cursor when the user hovers over the icon */
+        cursor: pointer;
             
-        }
+      
+        /* Increase the hit area of the icon */
+        padding: 8px;
+        display: flex;
+        align-items: center;
+        z-index: 2;
+      }
 
-        &.active {
-            position: absolute;
-            top: 50px;
-            left:0;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            background-color: $primary-color;
+      /* Hide the checkbox control */
+#hamburger-menu-checkbox {
+    display: none;
 
-        }
+    &:checked{
 
-        @media (min-width: 500px) {
-            display: flex;
-        }
+      &~.navbar__list,
+      &~.navbar_list li {
+        transform: translateX(0);
+      }
     }
-    &__toggle {
-            height: 35px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
+       // hier moet nog een navbar div komen voor mobiele
+       // weergave van menu 
+  }
 
-
-        span {
-            background-color: white;
-            height: 5px;
-            width: 35px;
-
-        }
+  #hamburger-menu-checkbox ~ label span {
+    display: inline-block;
+    width: 32px;
+    height: 4px;
+    background-color: white;
+    border-radius: 3px;
+    margin-left: var(--space-small);
+// media query om hamburger menu te laten verdwijnen vanaf 680px of breder:
+    @media (min-width:680px){
+        display: none;
     }
+  }
 
+  /* Set up the top and bottom lines of the hamburger icon */
+#hamburger-menu-checkbox ~ label span::after,
+#hamburger-menu-checkbox ~ label span::before {
+  content: '';
+  position: absolute;
+  width: 32px;
+  height: 4px;
+  background-color: white;
+  border-radius: 3px;
 }
 
+/* Place the bottom line 8px below the middle */
+#hamburger-menu-checkbox ~ label span::after {
+    margin-top: 8px;
+  }
+  
+  /* Place the top line 8px above the middle line */
+  #hamburger-menu-checkbox ~ label span::before {
+    margin-top: -8px;
+  }
+
+
+
+  /* Set the middle line's transition to be instantaneous and to start */
+/* 0.2 seconds after the transition is applied */
+#hamburger-menu-checkbox ~ label span {
+    transition-duration: 0s;
+    transition-delay: 0.2s;
+  }
+  
+  /* Apply styles to the top and bottom lines */
+  #hamburger-menu-checkbox ~ label span::after,
+  #hamburger-menu-checkbox ~ label span::before {
+    /* Set the transition time for the top and bottom lines to 0.2s. */
+    transition-duration: 0.2s;
+  
+    /* Set the transition properties as we need these lines to animate */
+    /* upwards or downwards as applicable and then rotate */
+    transition-property: margin, transform;
+  
+    /* These styles are applied in the unselected state of the */
+    /* control, so we need to setup the reverse animation here. */
+    /* This property animates the transform (rotation) immediately */
+    /* and the margin 0.2s later, as is needed when going from the */
+    /* cross to the hamburger icon */
+    transition-delay: 0.2s, 0s;
+  }
+  
+  /* Hide the middle line when the control is selected */
+  #hamburger-menu-checkbox:checked ~ label span {
+    background-color: transparent;
+  }
+  
+  /* Set up the forward animation for the top and bottom lines. */
+  #hamburger-menu-checkbox:checked ~ label span:before,
+  #hamburger-menu-checkbox:checked ~ label span:after {
+    transition-delay: 0s, 0.2s;
+    margin-top: 0;
+  }
+  
+  /* Rotate the top line by 45 degrees */
+  #hamburger-menu-checkbox:checked ~ label span:before {
+    transform: rotate(45deg);
+  }
+  
+  /* Rotate the bottom line by 45 degrees in the opposite direction */
+  #hamburger-menu-checkbox:checked ~ label span:after {
+    transform: rotate(-45deg);
+  }
+  
+
+
+
+
+}
+  
+
+    
+   
+    
 
