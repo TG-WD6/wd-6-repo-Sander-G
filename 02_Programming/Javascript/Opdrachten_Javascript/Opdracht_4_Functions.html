@@ -185,13 +185,13 @@ function logToConsole(inputElement) {
         Wat merk je op als je deze meerdere keren gebruikt?</p>
         <p>- Wat opvalt is dat telkens een waarde tussen nul en 1 wordt gegeven.</p>
 
-<button onclick="randomNum()">Random nummer!</button>
+<!-- <button onclick="randomNum()">Random nummer!</button>
 <script>
 
 function randomNum() {
         console.log(Math.random());
 }
-</script>
+</script> -->
 
 
 <p>Math.random() geeft dus een getal 0 >= x &lt; 1 terug - het kan wel 0 zijn, maar nooit 1.<br>
@@ -230,36 +230,90 @@ Kan je van beide al een voorbeeld geven?</p>
 <li>1.Schrijf een functie waar je een naam aan mee kan geven. Laat de naam vergelijken met de namen van mensen in je groepje.<br> 
 Wanneer je functie de naam wel/niet herkent moet dat als boodschap teruggegeven worden.</li>
 
+
 <!-- <script>
-function memberOfTheCoolers(saner) {
-if (
-naam.toLowerCase() === 'junier' 
-|| naam.toLowerCase() === 'bart' 
-|| naam.toLowerCase() === 'marko' 
-|| naam.toLowerCase() === 'szymon' 
-|| naam.toLowerCase() === 'sander'
-)
-{return `${naam} is one of the Coolers`;
-
-
-}else return `${naam} is not one of the Coolers`;
+        
+function isACooler(naam) {
+  let result;
+  if (naam === 'junier' || naam === 'bart' || naam === 'marko' || naam === 'szymon' || naam == 'sander')
+   {
+    result = `${naam} is one of the Coolers`;
+  } else {
+    result = `${naam} is not one of the Coolers`;
+  }
+  return result;
 }
+
+console.log(isACooler('junier'));
 </script> -->
 
 
+<li>2. Schrijf een 2e functie die de eerste functie aanroept,<br>
+        en vervolgens de teruggegeven boodschap in een div element op je pagina toont.<br>
+        Denk aan de DOM methods!</li><br>
+<!-- div needs to appear before the script!! -->
+<p>the div is below this line:</p>
+<div id="thisDiv">output comes here</div><br>
+
+<!-- <script>
+
+        function isACooler(naam) {
+                let result;
+                if (naam.toLowerCase() == 'junier' ||
+                        naam.toLowerCase() == 'bart' ||
+                        naam.toLowerCase() == 'marko' ||
+                        naam.toLowerCase() == 'szymon' ||
+                        naam.toLowerCase() == 'sander') {
+                        result = `${naam} is one of the Coolers!`;
+                } else {
+                        result = `${naam} is not one of the Coolers!`;
+                }
+                return result;
+        }
+
+
+        function membership(Group) {
+                document.getElementById("thisDiv").innerHTML = Group
+
+        }
 
 
 
+        let x = isACooler("Sander")
+        membership(x)
+
+</script> -->
+    
+
+<li>3. Schrijf nu het bovenstaande nogmaals, maar gebruik dit keer Arrow Functions.<br>
+Als het niet overal lukt is dat niet erg!</li><br>
+
+<!-- div needs to appear before the script!! -->
+<p>the div 'thisDiv2' is below this line:</p>
+<div id="thisDiv2">output comes here</div><br>
+<script>
+
+        let isACooler2 = (naam) => {
+                let result;
+                if (naam.toLowerCase() == 'junier' ||
+                        naam.toLowerCase() == 'bart' ||
+                        naam.toLowerCase() == 'marko' ||
+                        naam.toLowerCase() == 'szymon' ||
+                        naam.toLowerCase() == 'sander') {
+                        result = `${naam} is one of the Coolers!`;
+                } else {
+                        result = `${naam} is not one of the Coolers!`;
+                }
+                return result;
+        }
 
 
+        let membership2 = (Group) => {document.getElementById("thisDiv2").innerHTML = Group}
 
+        let x = isACooler2 ("Marko")
+        membership2(x)
 
-
-<li>2. Schrijf een 2e functie die de eerste functie aanroept, en vervolgens de teruggegeven boodschap in een div element op je pagina toont.<br>
-Denk aan de DOM methods!</li>
-
-<li>3. Schrijf nu het bovenstaande nogmaals, maar gebruik dit keer Arrow Functions. Als het niet overal lukt is dat niet erg!</li>
-
+</script>
 
 
 

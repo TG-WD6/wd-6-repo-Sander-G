@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays & Loops / Opdracht 5</title>
+
+  
+
+
+
+</head>
+<body>
+
+<h4>Arrays / Loops / Array Methods / </h4>
+<!-- for ... in loop -->
+<!-- <script>
+let array = ["Blink" , 182]
+for (const index in array) {
+        console.log(index)
+} 
+</script> -->
+
+<!-- for ... of loop -->
+<!-- <script>
+        let array = ["Blink", 182]
+        for (const item of array) {
+                console.log(item)
+        } 
+</script> -->
+
+<h4>Arrays & Loops - opdrachten</h4>
+<h4>Opdracht 5.1</h4>
+<p>We oefenen met Arrays.</p>
+<li>1. Maak een array met 1 t/m 10 in willekeurige volgorde en log dit.</li>
+<!-- <script>
+const cijferReeks = [4,3,2,1,5,7,6,8,9,10];
+console.log(cijferReeks);
+</script> -->
+<p>2. Maak een array met Appel, Aardbei en 3 andere fruitsoorten. Log dit.</p>
+<!-- <script>
+const fruitSoorten = ['Appel','Aardbei','Banaan','Citroen','Kiwi'];
+console.log(fruitSoorten);
+</script> -->
+<p>3. Gebruik de indexwaarde om Appel en Aardbei in de console te loggen.</p>
+<!-- <script>
+        const fruitSoorten = ['Appel','Aardbei','Banaan','Citroen','Kiwi'];
+        console.log(fruitSoorten[0]);
+        console.log(fruitSoorten[1]);
+        </script> -->
+<p>4. Gebruik Math.random() en Math.floor() om een random indexwaarde van je array met getallen te selecteren.<br>
+Gebruik dat getal vervolgens als index om een fruitsoort te selecteren en log dit.</p>
+
+<!-- <script>
+        const fruitSoorten = ['Appel','Aardbei','Banaan','Citroen','Kiwi'];
+        const cijferReeks = [4,3,2,1,5,7,6,8,9,10];
+        let randomNumber = Math.floor(Math.random() * cijferReeks.length);
+        console.log(fruitSoorten[cijferReeks[randomNumber]]);
+</script> -->
+
+
+<!-- <script>
+        const fruitSoorten = ['Appel','Aardbei','Banaan','Citroen','Kiwi'];
+        const random = Math.floor(Math.random() * fruitSoorten.length);
+        console.log(random, fruitSoorten[random]);
+        </script> -->
+
+<!-- https://stackoverflow.com/questions/30542515/math-random-in-regards-to-arrays -->
+
+<p>Als je een random getal krijgt met hogere waarde dan de lengte van je fruitsoorten array,<br>
+zal je code een error geven. Om dit op te lossen kan je de modulo operator gebruiken<br>
+ - het resultaat van X % Y kan nooit groter zijn dan Y!</p>
+<p>5. Console log de length property van je fruitsoorten array.</p>
+<!-- <script>
+        const fruitSoorten = ['Appel','Aardbei','Banaan','Citroen','Kiwi'];
+        console.log(fruitSoorten.length);
+        </script> -->
+<p>6. Fix de vorige error met modulo en de lengte.</p>
+
+<!-- <script>
+        const fruitSoorten = ['Appel','Aardbei','Banaan','Citroen','Kiwi'];
+        const cijferReeks = [4,3,2,1,5,7,6,8,9,10];
+        let randomNumber = Math.floor(Math.random() * cijferReeks.length);
+        console.log(fruitSoorten[cijferReeks[randomNumber] % fruitSoorten.length]);
+</script> -->
+
+<!-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder -->
+
+<p>Je kan de index van een item ook gebruiken om de waarde te veranderen.</p>
+<p>7. Verander “Appel” naar “Peer”</p>
+
+<!-- <script>
+        const fruitSoorten = ['Appel','Aardbei','Banaan','Citroen','Kiwi'];
+        fruitSoorten [0] = 'Peer';
+        console.log(fruitSoorten);
+        </script> -->
+
+
+<p>Verwissel “Peer” en “Aardbei” van positie. Kan je dit ook al met/zonder Array method?</p>
+
+<!-- <script>
+        const fruitSoorten = ['Appel','Aardbei','Banaan','Citroen','Kiwi'];
+        fruitSoorten [0] = 'Peer';
+        [fruitSoorten[0], fruitSoorten[1]] = [fruitSoorten[1], fruitSoorten[0]]
+        console.log(fruitSoorten);
+        </script> -->
+
+
+<h4>Opdracht 5.2</h4>
+
+
+
+</body>
+</html>
