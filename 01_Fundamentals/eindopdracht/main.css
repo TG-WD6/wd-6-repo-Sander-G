@@ -1,6 +1,11 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -20,169 +25,242 @@ body {
       grid-template-columns: 1fr;
 }
 
-.navbar {
-  padding: 5px 10px;
+header {
   background-color: purple;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1 / 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1 / 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /* Hide the checkbox control */
-  /* Set up the top and bottom lines of the hamburger icon */
-  /* Place the bottom line 8px below the middle */
-  /* Place the top line 8px above the middle line */
-  /* Set the middle line's transition to be instantaneous and to start */
-  /* 0.2 seconds after the transition is applied */
-  /* Apply styles to the top and bottom lines */
-  /* Hide the middle line when the control is selected */
-  /* Set up the forward animation for the top and bottom lines. */
-  /* Rotate the top line by 45 degrees */
-  /* Rotate the bottom line by 45 degrees in the opposite direction */
+  height: 65px;
 }
 
 .navbar__logo {
-  max-height: 100%;
-  max-width: 200px;
+  margin-left: 10px;
+  margin-bottom: 2px;
+  margin-top: 3px;
+  margin-right: -20px;
+  max-width: 250px;
 }
 
-.navbar__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  display: none;
+/* checkbox off-screen */
+#menu-btn {
+  position: absolute;
+  top: -100%;
+  left: -100%;
 }
 
-.navbar__list li {
-  padding: 10px 15px;
+/* Hamburger verborgen bij desktop weergave */
+.menu-icon {
+  visibility: hidden;
 }
 
-.navbar__list li a {
-  color: white;
-  text-decoration: none;
-}
-
-@media (min-width: 680px) {
-  .navbar__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
-.navbar #hamburger-menu-checkbox ~ label {
-  /* Show the 'hand' cursor when the user hovers over the icon */
-  cursor: pointer;
-  /* Increase the hit area of the icon */
-  padding: 8px;
+.menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 2;
 }
 
-.navbar #hamburger-menu-checkbox {
-  display: none;
+.menu a {
+  color: white;
+  text-decoration: none;
+  margin-right: 1rem;
 }
 
-.navbar #hamburger-menu-checkbox:checked ~ .navbar__list,
-.navbar #hamburger-menu-checkbox:checked ~ .navbar_list li {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+.menu a:hover {
+  -webkit-transition: color 0.3s linear;
+  transition: color 0.3s linear;
+  color: #3e24a5;
 }
 
-.navbar #hamburger-menu-checkbox ~ label span {
-  display: inline-block;
-  width: 32px;
-  height: 4px;
-  background-color: white;
-  border-radius: 3px;
-  margin-left: var(--space-small);
+.menu li {
+  list-style-type: none;
+  padding: 10px 10px;
 }
 
-@media (min-width: 680px) {
-  .navbar #hamburger-menu-checkbox ~ label span {
+.menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* styles voor scherm kleinder dan 680px */
+@media screen and (max-width: 680px) {
+  header {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "title   title   hamburger" "nav     nav     nav";
+  }
+  .menu-btn {
     display: none;
   }
-}
-
-.navbar #hamburger-menu-checkbox ~ label span::after,
-.navbar #hamburger-menu-checkbox ~ label span::before {
-  content: '';
-  position: absolute;
-  width: 32px;
-  height: 4px;
-  background-color: white;
-  border-radius: 3px;
-}
-
-.navbar #hamburger-menu-checkbox ~ label span::after {
-  margin-top: 8px;
-}
-
-.navbar #hamburger-menu-checkbox ~ label span::before {
-  margin-top: -8px;
-}
-
-.navbar #hamburger-menu-checkbox ~ label span {
-  -webkit-transition-duration: 0s;
-          transition-duration: 0s;
-  -webkit-transition-delay: 0.2s;
-          transition-delay: 0.2s;
-}
-
-.navbar #hamburger-menu-checkbox ~ label span::after,
-.navbar #hamburger-menu-checkbox ~ label span::before {
-  /* Set the transition time for the top and bottom lines to 0.2s. */
-  -webkit-transition-duration: 0.2s;
-          transition-duration: 0.2s;
-  /* Set the transition properties as we need these lines to animate */
-  /* upwards or downwards as applicable and then rotate */
-  -webkit-transition-property: margin, -webkit-transform;
-  transition-property: margin, -webkit-transform;
-  transition-property: margin, transform;
-  transition-property: margin, transform, -webkit-transform;
-  /* These styles are applied in the unselected state of the */
-  /* control, so we need to setup the reverse animation here. */
-  /* This property animates the transform (rotation) immediately */
-  /* and the margin 0.2s later, as is needed when going from the */
-  /* cross to the hamburger icon */
-  -webkit-transition-delay: 0.2s, 0s;
-          transition-delay: 0.2s, 0s;
-}
-
-.navbar #hamburger-menu-checkbox:checked ~ label span {
-  background-color: transparent;
-}
-
-.navbar #hamburger-menu-checkbox:checked ~ label span:before,
-.navbar #hamburger-menu-checkbox:checked ~ label span:after {
-  -webkit-transition-delay: 0s, 0.2s;
-          transition-delay: 0s, 0.2s;
-  margin-top: 0;
-}
-
-.navbar #hamburger-menu-checkbox:checked ~ label span:before {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.navbar #hamburger-menu-checkbox:checked ~ label span:after {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  .menu-icon {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: hamburger;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    padding: 30px 20px 30px 0;
+    position: relative;
+    visibility: visible;
+  }
+  .navicon {
+    background: white;
+    display: block;
+    height: 4px;
+    width: 32px;
+    border-radius: 3px;
+    position: relative;
+  }
+  .navicon:before {
+    top: 8px;
+  }
+  .navicon:after {
+    top: -8px;
+  }
+  .navicon:before,
+  .navicon:after {
+    background: white;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    content: "";
+    position: absolute;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    background-color: purple;
+    height: 100%;
+    width: 0%;
+    overflow: hidden;
+    top: 65px;
+    left: 0;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s;
+    -webkit-transform: translateX(0vw);
+            transform: translateX(0vw);
+  }
+  a {
+    width: 100%;
+    text-align: center;
+  }
+  ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    margin: 10px 0;
+    -webkit-transform: translateX(100vw);
+            transform: translateX(100vw);
+  }
+  li:nth-of-type(1) {
+    -webkit-transition: -webkit-transform 0.3s 150ms;
+    transition: -webkit-transform 0.3s 150ms;
+    transition: transform 0.3s 150ms;
+    transition: transform 0.3s 150ms, -webkit-transform 0.3s 150ms;
+  }
+  li:nth-of-type(2) {
+    -webkit-transition: -webkit-transform 0.3s 300ms;
+    transition: -webkit-transform 0.3s 300ms;
+    transition: transform 0.3s 300ms;
+    transition: transform 0.3s 300ms, -webkit-transform 0.3s 300ms;
+  }
+  li:nth-of-type(3) {
+    -webkit-transition: -webkit-transform 0.3s 450ms;
+    transition: -webkit-transform 0.3s 450ms;
+    transition: transform 0.3s 450ms;
+    transition: transform 0.3s 450ms, -webkit-transform 0.3s 450ms;
+  }
+  .menu-btn:checked ~ .menu {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow: hidden;
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    top: 65px;
+    position: absolute;
+  }
+  .menu-btn:checked ~ .menu li {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    width: 100%;
+  }
+  .menu-btn:checked ~ .menu-icon .navicon {
+    -webkit-transition: 0.2s ease-out;
+    transition: 0.2s ease-out;
+    background: transparent;
+  }
+  .menu-btn:checked ~ .menu-icon .navicon:before {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  .menu-btn:checked ~ .menu-icon .navicon:after {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .menu-btn:checked ~ .menu-icon .navicon:before,
+  .menu-btn:checked ~ .menu-icon .navicon:after {
+    top: 0;
+  }
 }
 
 .product-cards__wrapper {
@@ -207,6 +285,8 @@ body {
           justify-content: center;
   height: auto;
   width: 100vw;
+  padding-bottom: 20px;
+  padding-top: 20px;
   background-color: white;
 }
 
@@ -328,6 +408,8 @@ body {
 
 .product-card__cart-btn:hover {
   cursor: pointer;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 @media screen and (max-width: 680px) {
@@ -386,6 +468,10 @@ body {
   }
 }
 
+.login_wrapper {
+  margin-top: 70px;
+}
+
 .login {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
@@ -407,8 +493,10 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   width: 350px;
-  height: 650px;
+  height: 625px;
+  margin-top: 1rem;
   margin: 3rem auto;
+  padding: 1rem auto;
   background-color: white;
   border-radius: 3rem;
 }
@@ -435,13 +523,19 @@ body {
   width: 250px;
 }
 
-.login input[type="email"], .login input[type="password"] {
+.login input[type="email"],
+.login input[type="password"] {
   width: 100%;
   margin: 20px 0;
   border-top-style: hidden;
   border-right-style: hidden;
   border-left-style: hidden;
   border-bottom-style: 2px solid black;
+}
+
+.login input[type="email"]:focus,
+.login input[type="password"]:focus {
+  outline: none;
 }
 
 .login .login__remember {
@@ -475,12 +569,12 @@ body {
   transition: -webkit-transform 0.1s;
   transition: transform 0.1s;
   transition: transform 0.1s, -webkit-transform 0.1s;
-  background-color: blue;
+  background-color: #3e24a5;
 }
 
 .login button[type="submit"]:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 .login button[type="submit"] img {
@@ -515,6 +609,10 @@ body {
   color: grey;
   text-decoration: none;
   line-height: 150%;
+}
+
+.footer__flexbox-left a:hover {
+  color: #3e24a5;
 }
 
 .footer__flexbox-left li {

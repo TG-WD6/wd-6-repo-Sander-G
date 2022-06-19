@@ -9,6 +9,8 @@
     justify-content: center;
     height: auto;
     width: 100vw;
+    padding-bottom:20px;
+    padding-top:20px;
     
     background-color: $secondary-color;
 }
@@ -120,7 +122,10 @@
 
         &:hover {
             cursor: pointer;
+            transform: scale(1.02);
+         
         }
+       
     }
 }
 

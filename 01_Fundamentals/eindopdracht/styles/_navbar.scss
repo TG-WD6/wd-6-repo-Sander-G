@@ -1,157 +1,201 @@
-.navbar {
-    padding: 5px 10px;
-    background-color: $primary-color;
-    grid-row: 1 / 2;
-    grid-column: 1 / 2; 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+header {
+      background-color: $primary-color;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      height: 65px;
 
-    &__logo {
-        max-height: 100%;
-        max-width: 200px;
-            }
-
-    &__list {
-                margin: 0;
-                padding: 0;
-                list-style-type: none;
-                display: none;
-                
-        
-                      li { padding: 10px 15px;
-                    a { color: white;
-                        text-decoration: none;
-                    }
-                }
-                // media query - vanaf 680px desktop menu te laten zien.
-                @media (min-width: 680px)
-                {display: flex;
-                }
-
-            }
-
-
-           
-// geanimeerde hamburger..
-    #hamburger-menu-checkbox ~ label {
-        /* Show the 'hand' cursor when the user hovers over the icon */
-        cursor: pointer;
-            
-      
-        /* Increase the hit area of the icon */
-        padding: 8px;
-        display: flex;
-        align-items: center;
-        z-index: 2;
-      }
-
-      /* Hide the checkbox control */
-#hamburger-menu-checkbox {
-    display: none;
-
-    &:checked{
-
-      &~.navbar__list,
-      &~.navbar_list li {
-        transform: translateX(0);
-      }
-    }
-       // hier moet nog een navbar div komen voor mobiele
-       // weergave van menu 
-  }
-
-  #hamburger-menu-checkbox ~ label span {
-    display: inline-block;
-    width: 32px;
-    height: 4px;
-    background-color: white;
-    border-radius: 3px;
-    margin-left: var(--space-small);
-// media query om hamburger menu te laten verdwijnen vanaf 680px of breder:
-    @media (min-width:680px){
-        display: none;
-    }
-  }
-
-  /* Set up the top and bottom lines of the hamburger icon */
-#hamburger-menu-checkbox ~ label span::after,
-#hamburger-menu-checkbox ~ label span::before {
-  content: '';
-  position: absolute;
-  width: 32px;
-  height: 4px;
-  background-color: white;
-  border-radius: 3px;
 }
 
-/* Place the bottom line 8px below the middle */
-#hamburger-menu-checkbox ~ label span::after {
-    margin-top: 8px;
+.navbar__logo {
+  margin-left: 10px;
+  margin-bottom: 2px;
+  margin-top: 3px;
+  max-width: 250px;
+}
+
+/* checkbox off-screen */
+#menu-btn {
+  position: absolute;
+  top: -100%;
+  left: -100%;
+}
+/* Hamburger verborgen bij desktop weergave */
+.menu-icon {
+  visibility: hidden;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  & a { 
+    color: $secondary-color;
+    text-decoration: none;
+    margin-right: 1rem;
+    }
+  & a:hover{
+    transition: color 0.3s linear;
+    color: $link-hover;
+    }
+   
+  & li { 
+
+      list-style-type: none;
+      transform: none;
+      padding: 10px 10px;
+      &:nth-of-type(1),
+      &:nth-of-type(2),
+      &:nth-of-type(3) {
+        transition: none;
+
+    }
+  & ul {
+    display: flex;
   }
   
-  /* Place the top line 8px above the middle line */
-  #hamburger-menu-checkbox ~ label span::before {
-    margin-top: -8px;
+}
+
+/* styles voor scherm kleinder dan 680px */
+
+@media screen and (max-width: 680px) {
+  header {
+    display: grid;
+    grid-template-areas:
+      "title   title   hamburger"
+      "nav     nav     nav";
+  }
+  .menu-btn {
+    display: none;
   }
 
 
+  .menu-icon {
+    grid-area: hamburger;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    padding: 30px 20px 30px 0;
+    position: relative;
+    visibility: visible;
+ 
+    
+  }
+  .navicon {
+    background: $secondary-color;
+    display: block;
+    height: 4px;
+    width: 32px;
+    border-radius: 3px;
+    position: relative;
+  }
+  .navicon:before {
+    top: 8px;
+  }
+  .navicon:after {
+    top: -8px;
+  }
+  .navicon:before,
+  .navicon:after {
+    background: $secondary-color;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    content: "";
+    position: absolute;
+    transition: all 0.2s ease-out;
+  }
 
-  /* Set the middle line's transition to be instantaneous and to start */
-/* 0.2 seconds after the transition is applied */
-#hamburger-menu-checkbox ~ label span {
-    transition-duration: 0s;
-    transition-delay: 0.2s;
+
+  .menu {
+    display:flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: $primary-color;
+    height: 100%;
+    width: 0%;
+    overflow: hidden;
+    left:0;
+    transition: transform 0.3s;
+    transform: translateX(0vw);
+   
   }
-  
-  /* Apply styles to the top and bottom lines */
-  #hamburger-menu-checkbox ~ label span::after,
-  #hamburger-menu-checkbox ~ label span::before {
-    /* Set the transition time for the top and bottom lines to 0.2s. */
-    transition-duration: 0.2s;
-  
-    /* Set the transition properties as we need these lines to animate */
-    /* upwards or downwards as applicable and then rotate */
-    transition-property: margin, transform;
-  
-    /* These styles are applied in the unselected state of the */
-    /* control, so we need to setup the reverse animation here. */
-    /* This property animates the transform (rotation) immediately */
-    /* and the margin 0.2s later, as is needed when going from the */
-    /* cross to the hamburger icon */
-    transition-delay: 0.2s, 0s;
+
+  & a {
+    width: 100%;
+    text-align: center;
   }
-  
-  /* Hide the middle line when the control is selected */
-  #hamburger-menu-checkbox:checked ~ label span {
-    background-color: transparent;
+  & ul {
+    display: flex;
+    flex-direction: column;
   }
-  
-  /* Set up the forward animation for the top and bottom lines. */
-  #hamburger-menu-checkbox:checked ~ label span:before,
-  #hamburger-menu-checkbox:checked ~ label span:after {
-    transition-delay: 0s, 0.2s;
-    margin-top: 0;
+
+
+  & li {
+      display: flex;
+      align-items: baseline;
+      margin: 10px 0;
+      transform: translateX(100vw);
+
+      &:nth-of-type(1) {
+        transition: transform 0.3s 150ms;
+      }
+
+      &:nth-of-type(2) {
+        transition: transform 0.3s 300ms;
+      }
+
+      &:nth-of-type(3) {
+        transition: transform 0.3s 450ms;
+      }
   }
-  
-  /* Rotate the top line by 45 degrees */
-  #hamburger-menu-checkbox:checked ~ label span:before {
-    transform: rotate(45deg);
+
+
+//  box checked stylies
+  .menu-btn:checked ~ .menu {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow: hidden;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height:fit-content;
+    top: 65px;
+    position: absolute;
+    
+    & li { 
+      // padding: 15px, 15px;
+      transform: translateX(0);
+      width: 100%;
+    }
   }
-  
-  /* Rotate the bottom line by 45 degrees in the opposite direction */
-  #hamburger-menu-checkbox:checked ~ label span:after {
+
+
+// hamburger menu animatie
+  .menu-btn:checked ~ .menu-icon .navicon {
+    transition: 0.2s ease-out;
+    background: transparent;
+    
+  }
+  .menu-btn:checked ~ .menu-icon .navicon:before {
     transform: rotate(-45deg);
   }
-  
+  .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  .menu-btn:checked ~ .menu-icon .navicon:before,
+  .menu-btn:checked ~ .menu-icon .navicon:after {
+    top: 0;
+  }
 
+
+}
 
 
 
 }
-  
-
-    
-   
-    
-
