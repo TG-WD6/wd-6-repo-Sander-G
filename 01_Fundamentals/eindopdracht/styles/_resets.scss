@@ -1,5 +1,6 @@
 *, *::before, *::after {
     box-sizing: border-box;
+    font-family: "Raleway";
 }
 
 html {
@@ -13,6 +14,8 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1;
 }
+
+
 
 .root {
     display: grid;
