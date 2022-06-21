@@ -270,8 +270,183 @@ const getallenReeks = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
 // console.log(pets.includes('at'));
 // // expected output: false
 
-// Opdracht 6 - Objects
 
+
+
+
+// Opdracht 6 - Objects
+// Opdracht 6.1
+// We oefenen met het aanmaken van Objects.
+// Maak meerdere objects Pet met een naam en een soort. Maak een ander dier met elk van de 5 soorten constructor uit de voorbeelden en log deze in de console. Kijk bij elke ook naar de prototype - kan je een verschil ontdekken?
+
+//Object Constructor:
+
+// let firstPet = new Object();
+
+// firstPet.name = "Chico" ;
+// firstPet.kind = "Dog" ;
+// firstPet.breed = "Chiuahua" ;
+// firstPet.age = 13 ;
+
+// console.log(firstPet);
+
+// Literal Constructor:
+
+// let secondPet = { 
+//     name : "poekie",
+//     kind : "Cat",
+//     breed : "Maine Coon",
+//     age: 12,
+//     }
+// console.log(secondPet);
+
+// Function Constructor:
+
+// function ThirdPet(name, kind, breed, age) {
+//     this.name = name
+//     this.kind = kind
+//     this.breed = breed
+//     this.age = age
+//     }
+
+//     let newPet = new ThirdPet("master splinter", "Rat", "Dumbo Sphynx", 3 );
+
+// console.log(newPet);
+
+
+// Singleton Constructor:
+
+// let FourthPet = new function() {
+//     this.name = "Nijn",
+//     this.kind = "Konijn",
+//     this.breed = "Vlaamse reus",
+//     this.age = 3
+// }
+// console.log(FourthPet);
+
+
+// Class-based Constructor:
+
+// class FifthPet {
+//     constructor(name, kind, breed, age) {
+//         this.name = name
+//         this.kind = kind
+//         this.breed = breed
+//         this.age = age
+//     }
+
+// }
+// let Yertle = new FifthPet("Yertle", "Turtle", "Roodwang", 73 );
+// console.log(Yertle)
+
+
+
+// De laatste veelgebruikte manier om Objecten aan te maken is met Object.create()
+// Opdracht 6.1.2: 
+// Gebruik Object.create() om een Object aan te maken. 
+//Doe dit voor elke Pet die je in de vorige opdracht hebt gemaakt, en log ze in de console. 
+//Valt er iets op aan de prototype?
+
+// let dog = Object.create(firstPet);
+// console.log(dog);
+
+// let cat = Object.create(secondPet);
+// console.log(cat);
+
+// let rat = Object.create(newPet);
+// console.log(rat);
+
+// let rabbit = Object.create(FourthPet);
+// console.log(rabbit);
+
+// let turtle = Object.create(Yertle);
+// console.log(turtle);
+
+//  in geval van class based en function constructor wordt de class resp. functienaam weergegeven.
+// de pet objecten zijn het prototype van de soort waartoe ze behoren.
+
+
+
+// Opdracht 6.1.3: 
+
+// let personObjects = [ 
+//     {name: "Sander", age: 43},
+//     {name: "Marko", age: 12},
+//     {name: "Junier", age: 18},
+//     {name: "Bart", age: 33},
+//     {name: "Szymon", age: 26},
+//     {name: "Alex", age: 33},
+//     {name: "Jens", age: 28},
+//     {name: "Alexander", age: 25},
+//     {name: "Joost", age: 35},
+//     {name: "Ruben", age: 33},
+//     {name: "Santa", age: 200},                
+//     ];
+
+// // console.log(personObjects);
+
+
+// personObjects.sort(function (x,y) {
+//     return x.age - y.age;
+// });
+
+// console.table(personObjects); // console geeft een table bij .table ipv basic log
+// console.log(personObjects);
+
+
+// Opdracht 6.2.1
+// We oefenen met nested Objects.
+// Maak een Club class die het volgende bijhoudt:
+// Naam
+// Type club
+// Aantal :Leden
+
+
+class Club {
+    constructor(naam, type, ledenAantal) {
+        this.naam = naam
+        this.type = type
+        this.ledenAantal = ledenAantal
+        this.contactInfo = new this.contactInfo(adres, contactTel, contactPersoon)
+  
+    }
+}
+
+// Opdracht 6.2.2
+// Maak een Contactinformatie class aan en voeg die toe aan de Club class. De Contactinformatie houdt het volgende bij:
+// Adres
+// Telefoonnummer
+// Contactpersoon
+
+
+class ContactInfo {
+    constructor(adres, contactTel, contactPersoon){
+        this.adres = adres
+        this.contactTel = contactTel
+        this.contactPersoon = contactPersoon
+    }
+
+}
+// Opdracht 6.3
+// Maak een array met 5 verschillende Clubs aan. Itereer door het array heen en log voor elke Club de naam,
+// het telefoonnummer en de contactpersoon.
+
+let clubArray = [
+    {naam: "Ajax", type: "voetbal", ledenaantal: 20123, contactTel: 0612341234, contactPersoon: "Johan"},
+    {naam: "PSV", type: "voetbal", ledenaantal: 20122, contactTel: 0612341233, contactPersoon: "Willem"},
+    {naam: "Vitesse", type: "voetbal", ledenaantal: 20121, contactTel: 0612341232, contactPersoon: "Jan"},
+    {naam: "Bloemendaal", type: "hockey", ledenaantal: 6123, contactTel: 0612341231, contactPersoon: "Pieter"},
+    {naam: "SGS", type: "cricket", ledenaantal: 543, contactTel: 0612341230, contactPersoon: "Henk"},
+    ]
+
+    for(let item in clubArray){
+        console.log(`Sportclub: ${clubArray[item].naam}, Telefoonnummer: ${clubArray[item].contactTel}, Contactpersoon: ${clubArray[item].contactPersoon}`);
+     }
+
+// Opdracht 6.4
+
+// Geef 2 clubs dezelfde contactpersoon, en verander iets aan deze contactpersoon bij 1 van de 2.
+// Log vervolgens de contactpersoon van de andere club.
 
 
 
