@@ -3,7 +3,7 @@
 ### Welkom in mijn TechGrounds repository! &nbsp; 
 &nbsp; 
 ### Over mij: 
-Na mijn studie Psychologie in Groningen heb ik enkele jaren in Den Haag gewoond en gewerkt maar  inmiddels ben ik weer woonachtig in Twente, waar ik ook ben opgegroeid. Ik heb een passie voor fotografie, design & usability en wil deze passies ook meenemen in mijn ontwikkeling tot front-end developer.
+Na mijn studie Psychologie in Groningen heb ik enkele jaren in Den Haag gewoond en gewerkt maar  inmiddels ben ik weer woonachtig in Twente, waar ik ook ben opgegroeid. Ik heb een passie voor fotografie, design & usability en wil dit graag meenemen in mijn ontwikkeling tot front-end developer.
 
 In het verleden heb ik mij als autodidacte techneut bezig gehouden met het maken van websites en allerlei computer gerelateerde projecten. Ik wil hier graag meer over leren om vanuit een solide basis een carrière switch te kunnen maken richting front-end development.    
 
@@ -12,7 +12,7 @@ Sinds begin mei 2022 volg ik daarom bij TechGrounds een traineeship om opgeleid 
 
 In dit repository zijn de door mij gemaakte opgaven en eindopdrachten per behandeld onderwerp te vinden.  
 &nbsp;   
-
+### Progress bar 
 ![](./readme/progress_bar.svg)  
 Bovenstaande SVG progressbar geeft aan hoe ver het traineeship inmiddels gevorderd is en zal regelmatig handmatig door mij worden ge-update   ...tot ik een manier heb gevonden / geleerd om dit te automatiseren.
 
@@ -44,7 +44,7 @@ Hardskills:
 
 - Het maken van mijn eigen portfolio website. 
 - Bedrijfswebsite voor een Yoga lerares.
-- Het automatiseren van bovenstaande progressbar en verder 'style hacken' van deze README.md. 
+- Het automatiseren van de progressbar en verder 'style hacken' van deze README.md. 
 &nbsp;   
 &nbsp;   
 
