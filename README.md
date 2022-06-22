@@ -49,11 +49,8 @@ Hardskills:
 
 ### Recaps:  
 ###### Na 1 maand:  
+##### _"De eerste maand zit er al op, ongelooflijk hoe mijn begrip en skills zijn gegroeid in deze korte tijd. Het is erg interessant, hard werken en soms heb je het gevoel dat dingen nog op z'n plaats moeten vallen. Het peer-assisted leren helpt hierbij: de communicatie binnen de scrum groepjes verloopt steeds beter, als problemen zijn overwonnen vieren we deze kleine stappen richting einddoel. Verder met JavaScript!"_ 
 
-##### <dd>_"De eerste maand zit er al op, ongelooflijk hoe mijn begrip en skills zijn gegroeid in deze korte tijd. Het is erg interessant, hard werken en soms heb je het gevoel dat dingen nog op z'n plaats moeten vallen. Het peer-assisted leren helpt hierbij: de communicatie binnen de scrum groepjes verloopt steeds beter, als problemen zijn overwonnen vieren we deze kleine stappen richting einddoel. Verder met JavaScript!"_ </dd>
-&nbsp;   
-&nbsp;   
-&nbsp; 
 
 
 
