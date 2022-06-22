@@ -1,7 +1,9 @@
 
 # Sander Grunnekemeijer
-
-Na mijn studie psychologie in Groningen heb ik enkele jaren in Den Haag gewoond en gewerkt maar inmiddels weer woonachtig in Twente, waar ik ook ben opgegroeid. Ik heb een passie voor fotografie, design en usability en wil deze passies ook meenemen in mijn ontwikkeling tot front-end developer.
+### Welkom in mijn TechGrounds repository! &nbsp; 
+&nbsp; 
+### Over mij: 
+Na mijn studie Psychologie in Groningen heb ik enkele jaren in Den Haag gewoond en gewerkt maar  inmiddels ben ik weer woonachtig in Twente, waar ik ook ben opgegroeid. Ik heb een passie voor fotografie, design & usability en wil deze passies ook meenemen in mijn ontwikkeling tot front-end developer.
 
 In het verleden heb ik mij als autodidacte techneut bezig gehouden met het maken van websites en allerlei computer gerelateerde projecten. Ik wil hier graag meer over leren om vanuit een solide basis een carrière switch te kunnen maken richting front-end development.    
 
@@ -16,7 +18,6 @@ Bovenstaande SVG progressbar geeft aan hoe ver het traineeship inmiddels gevorde
 
  &nbsp; 
 ### Onderwerpen die tot dusverre in het traineeship aan bod zijn gekomen:  
- &nbsp; 
 
 Softskills:
 - Scrum methodiek
@@ -25,7 +26,7 @@ Softskills:
 
 
 Hardskills:
- - Gebruik van git
+ - Gebruik van Git / Github
  - HTML Basics
  - CSS Basics
  - Sass CSS preprocessor
