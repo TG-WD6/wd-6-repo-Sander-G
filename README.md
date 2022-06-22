@@ -12,7 +12,7 @@ Sinds begin mei 2022 volg ik daarom bij TechGrounds een traineeship om opgeleid 
 
 In dit repository zijn de door mij gemaakte opgaven en eindopdrachten per behandeld onderwerp te vinden.  
 &nbsp;   
-### Progress bar 
+### Progress bar: 
 ![](./readme/progress_bar.svg)  
 Bovenstaande SVG progressbar geeft aan hoe ver het traineeship inmiddels gevorderd is en zal regelmatig handmatig door mij worden ge-update   ...tot ik een manier heb gevonden / geleerd om dit te automatiseren.
 
