@@ -15,33 +15,21 @@ In dit repository zijn de door mij gemaakte opgaven en eindopdrachten per behand
 Bovenstaande SVG progressbar geeft aan hoe ver het traineeship inmiddels gevorderd is en zal regelmatig handmatig door mij worden ge-update   ...tot ik een manier heb gevonden / geleerd om dit te automatiseren.
 
  &nbsp; 
-### Onderwerpen die tot dusverre in het traineeship aan bod zijn gekomen:
-<table>
-<th align="center">
-<img width="200" height="1">
-<p> 
+### Onderwerpen die tot dusverre in het traineeship aan bod zijn gekomen:  
+ &nbsp; 
 
 Softskills:
 - Scrum methodiek
- - Project management met Jira
- - Peer assisted learning
- &nbsp;  
-&nbsp;
-</p>
-</th>
-<th align="center">
-<img width="200" height="1">
-<p> 
+- Project management met Jira
+- Peer assisted learning
+
 
 Hardskills:
  - Gebruik van git
  - HTML Basics
  - CSS Basics
  - Sass CSS preprocessor
-</p>
-</th>
-</tr>
-</table>
+
 
  
 
@@ -62,7 +50,7 @@ Hardskills:
 ### Recaps:  
 ###### Na 1 maand:  
 
-#### <dd>_"De eerste maand zit er al op, ongelooflijk hoe mijn begrip en skills zijn gegroeid in deze korte tijd. Het is erg interessant, hard werken en soms heb je het gevoel dat dingen nog op z'n plaats moeten vallen. Het peer-assisted leren helpt hierbij: de communicatie binnen de scrum groepjes verloopt steeds beter, als problemen zijn overwonnen vieren we deze kleine stappen richting einddoel. Verder met JavaScript!"_ </dd>
+##### <dd>_"De eerste maand zit er al op, ongelooflijk hoe mijn begrip en skills zijn gegroeid in deze korte tijd. Het is erg interessant, hard werken en soms heb je het gevoel dat dingen nog op z'n plaats moeten vallen. Het peer-assisted leren helpt hierbij: de communicatie binnen de scrum groepjes verloopt steeds beter, als problemen zijn overwonnen vieren we deze kleine stappen richting einddoel. Verder met JavaScript!"_ </dd>
 &nbsp;   
 &nbsp;   
 &nbsp; 
