@@ -1,6 +1,6 @@
-.footer__wrapper{
+.footer__wrapper {
     grid-row: 4 / 5;
-    grid-column: 1 / 2; 
+    grid-column: 1 / 2;
     display: flex;
     justify-content: space-between;
     width: 100vw;
@@ -9,7 +9,7 @@
 }
 
 // Categorie heading
-.footer__heading{
+.footer__heading {
     color: black;
     margin-bottom: 5px;
     line-height: 150%;
@@ -17,36 +17,43 @@
 
 // Text styling linker flexbox
 
-.footer__flexbox-left{
-    
-    a:visited, a:active, a:link{
+.footer__flexbox-left {
+
+    a:visited,
+    a:active,
+    a:link {
         color: grey;
         text-decoration: none;
-        line-height: 150%;    
+        line-height: 150%;
     }
-    a:hover{
+
+    a:hover {
         color: $link-hover;
     }
-    li{
+
+    li {
         list-style-type: none;
     }
-    
-    ul{
+
+    ul {
         padding-left: 0px;
-       
-    }   
+
+    }
 }
 
-.footer__stores-box, .footer__categories-box-top, .footer__categories-box-bottom {
+.footer__stores-box,
+.footer__categories-box-top,
+.footer__categories-box-bottom {
     margin-left: 1em;
 }
 
 
 
-.footer__flexbox-left, .footer__flexbox-right{
+.footer__flexbox-left,
+.footer__flexbox-right {
     display: flex;
     justify-content: space-between;
-    
+
 }
 
 
@@ -55,47 +62,54 @@
 // media query for screen > 450 & < 680px
 
 
-@media screen and (min-width:450px) and (max-width:680px){
-    .footer__wrapper{
+@media screen and (min-width:450px) and (max-width:680px) {
+    .footer__wrapper {
         flex-direction: column;
         align-items: center;
 
-        
+
     }
-  
-    .footer__flexbox-left, .footer__flexbox-right{
-      width: 90vw;
-      font-size: 80%;
-      justify-content: space-around;
+
+    .footer__flexbox-left,
+    .footer__flexbox-right {
+        width: 90vw;
+        font-size: 80%;
+        justify-content: space-around;
+
     
-      
+
     }
 }
 
-@media screen and (max-width:450px){
+@media screen and (max-width:450px) {
 
     .footer__flexbox-left {
         width: 90vw;
-        font-size: 0%;
-        display:flex;
+       
+        display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-     align-items: flex-start;
-     padding-left: 5vw; 
+        align-items: flex-start;
+        padding-left: 5vw;
+
+        & ul li {
+            transform: none;
+
+        }
     }
 
-    .footer__wrapper{
-    
+    .footer__wrapper {
+
         flex-direction: column;
-        align-items: center;     
+        align-items: center;
     }
 
     .footer__service-box,
     .footer__stores-box,
     .footer__categories-box-top,
-    .footer__categories-box-bottom{
-        margin-left: 0; 
+    .footer__categories-box-bottom {
+        margin-left: 0;
     }
-    
+
 
 }

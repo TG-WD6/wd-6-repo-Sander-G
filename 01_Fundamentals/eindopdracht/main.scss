@@ -1,8 +1,18 @@
-@import 'styles/colors','styles/resets','styles/navbar','styles/cards','styles/login','styles/footer';
+@import 'styles/colors';
+@import 'styles/resets';
+@import 'styles/basics';
 
+@import 'styles/navbar';
+@import 'styles/cards';
+@import 'styles/login';
+@import 'styles/footer';
 
 // fontawesome icons
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
+
+
+
+
 
 
 

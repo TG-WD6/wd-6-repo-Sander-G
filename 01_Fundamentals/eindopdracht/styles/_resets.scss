@@ -1,29 +1,6 @@
 *, *::before, *::after {
     box-sizing: border-box;
-    font-family: "Raleway";
 }
-
-html {
-    scroll-behavior: smooth;
-  }
-
-  
-body { 
-    margin:0;
-    background-color: $tertiary-color;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1;
-}
-
-
-
-.root {
-    display: grid;
-    min-height: 100vh;
-    grid-template-rows: 50px auto; 
-    grid-template-columns: 1fr;    
-}
-
 
 
 
