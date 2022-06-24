@@ -105,7 +105,7 @@ header {
   display: flex;
 }
 
-/* nav styles voor scherm kleinder dan 680px */
+/* nav styles voor scherm kleiner dan 680px */
 @media screen and (max-width: 680px) {
   header {
     display: -ms-grid;
@@ -310,6 +310,7 @@ header {
   height: auto;
   width: 100vw;
   background-color: white;
+  padding-bottom: 20px;
 }
 
 .product-card {
@@ -334,7 +335,7 @@ header {
   min-height: 165px;
   background-color: grey;
   margin: 10px;
-  background-image: url(./images/chico_card1.png) ;
+  background-image: url(./images/chico_card1.png);
   background-size: 165px 165px;
 }
 
@@ -343,7 +344,7 @@ header {
   min-height: 165px;
   background-color: grey;
   margin: 10px;
-  background-image: url(./images/chico_card2.png) ;
+  background-image: url(./images/chico_card2.png);
   background-size: 165px 165px;
 }
 
@@ -352,7 +353,7 @@ header {
   min-height: 165px;
   background-color: grey;
   margin: 10px;
-  background-image: url(./images/chico_card3.png) ;
+  background-image: url(./images/chico_card3.png);
   background-size: 165px 165px;
 }
 
@@ -478,8 +479,8 @@ header {
     align-self: center;
     min-width: 150px;
     min-height: 150px;
-    background-image: url(./images/chico_card1.png) ;
-  background-size: 150px 150px;
+    background-image: url(./images/chico_card1.png);
+    background-size: 150px 150px;
   }
 
   .product-card__img2 {
@@ -488,8 +489,8 @@ header {
     align-self: center;
     min-width: 150px;
     min-height: 150px;
-    background-image: url(./images/chico_card2.png) ;
-  background-size: 150px 150px;
+    background-image: url(./images/chico_card2.png);
+    background-size: 150px 150px;
   }
 
   .product-card__img3 {
@@ -498,8 +499,8 @@ header {
     align-self: center;
     min-width: 150px;
     min-height: 150px;
-    background-image: url(./images/chico_card3.png) ;
-  background-size: 150px 150px;
+    background-image: url(./images/chico_card3.png);
+    background-size: 150px 150px;
   }
 
   .product-card__txtbox {
@@ -549,7 +550,8 @@ header {
 }
 
 .login_wrapper {
-  margin-top: 70px;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .login {
@@ -599,8 +601,17 @@ header {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  height: 250px;
-  width: 250px;
+
+}
+
+.login__image img {
+  height: 200px;
+}
+
+.login .login__input-box {
+  align-items: center;
+  margin-bottom: 1rem;
+
 }
 
 .login input[type="email"],
@@ -611,6 +622,7 @@ header {
   border-right-style: hidden;
   border-left-style: hidden;
   border-bottom-style: 2px solid black;
+  font-size: 80%;
 }
 
 .login input[type="email"]:focus,
@@ -626,6 +638,17 @@ header {
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin: 14px 0;
+  font-size: 80%;
+}
+
+.login .login__remember a:link {
+  text-decoration: none;
+}
+
+.button_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .login button[type="submit"] {
@@ -638,13 +661,12 @@ header {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 100%;
+  width: 90%;
   height: 3rem;
   color: white;
   font-size: x-large;
   font-weight: bold;
   border: 0;
-  margin-top: 8px;
   -webkit-transition: -webkit-transform 0.1s;
   transition: -webkit-transform 0.1s;
   transition: transform 0.1s;
@@ -659,6 +681,160 @@ header {
 
 .login button[type="submit"] img {
   padding-right: 10px;
+
+}
+
+@media screen and (max-width: 680px) {
+
+  .login {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 300px;
+    height: 575px;
+    margin: 3rem auto;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 3rem;
+  }
+
+  .login__image img {
+    height: 180px;
+  }
+
+  .login button[type="submit"] {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 80%;
+    height: 3rem;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    border: 0;
+    -webkit-transition: -webkit-transform 0.1s;
+    transition: -webkit-transform 0.1s;
+    transition: transform 0.1s;
+    transition: transform 0.1s, -webkit-transform 0.1s;
+    background-color: #3e24a5;
+  }
+
+  .login .login__input-box {
+
+    font-size: 80%;
+    margin-bottom: 1rem;
+    align-items: center;
+
+
+  }
+
+
+
+
+
+}
+
+@media screen and (max-width: 475px) {
+
+  .login {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 275px;
+    height: 525px;
+    margin: 3rem auto;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 3rem;
+  }
+
+  .login__image img {
+    height: 160px;
+  }
+
+  .login button[type="submit"] {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 70%;
+    height: 2.5rem;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    border: 0;
+    -webkit-transition: -webkit-transform 0.1s;
+    transition: -webkit-transform 0.1s;
+    transition: transform 0.1s;
+    transition: transform 0.1s, -webkit-transform 0.1s;
+    background-color: #3e24a5;
+  }
+
+  .login .login__input-box {
+
+    font-size: 75%;
+    margin-bottom: 1rem;
+    align-items: center;
+
+  }
+
+  .login .login__input-box a {
+
+
+
+    display: inline;
+
+
+
+
+
+  }
+
+
+
 }
 
 .footer__wrapper {
@@ -764,7 +940,7 @@ header {
     display: flex;
     align-items: left;
     margin: 0;
-    }
+  }
 
 
 }
@@ -847,8 +1023,8 @@ header {
     align-self: center;
     min-width: 140px;
     min-height: 140px;
-    background-image: url(./images/chico_card1.png) ;
-  background-size: 140px 140px;
+    background-image: url(./images/chico_card1.png);
+    background-size: 140px 140px;
   }
 
   .product-card__img2 {
@@ -857,8 +1033,8 @@ header {
     align-self: center;
     min-width: 140px;
     min-height: 140px;
-    background-image: url(./images/chico_card2.png) ;
-  background-size: 140px 140px;
+    background-image: url(./images/chico_card2.png);
+    background-size: 140px 140px;
   }
 
   .product-card__img3 {
@@ -867,8 +1043,8 @@ header {
     align-self: center;
     min-width: 140px;
     min-height: 140px;
-    background-image: url(./images/chico_card3.png) ;
-  background-size: 140px 140px;
+    background-image: url(./images/chico_card3.png);
+    background-size: 140px 140px;
   }
 
 
@@ -920,6 +1096,6 @@ header {
     font-size: 75%;
   }
 
-
-
 }
+
+/* this is the end, my friend. */
