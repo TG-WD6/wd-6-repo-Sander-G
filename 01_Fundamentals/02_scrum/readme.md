@@ -129,8 +129,12 @@ He cites the example of Scott Downey, the former Agile Coach of MySpace and inve
 2. Wat zit er in de Scrum Retrospective?  
 
 Dit is een moment voor zelfreflectie met het hele team. Hier beoordeelt iedereen zijn/haar prestaties en worden afspraken gemaakt om het proces te verbeteren.
+<<<<<<< HEAD
 1. Welke vragen moet iedereen tijdens de Daily Stand Up aan zichzelf stellen?
 2. Wat zit er in de Scrum Retrospective?
+=======
+
+>>>>>>> 0e9a0acd40e82b13cb8700b801219f6001798a62
 
 Je kan ook overwegen om een Scrum certificaat te halen via Certiprof: 
 

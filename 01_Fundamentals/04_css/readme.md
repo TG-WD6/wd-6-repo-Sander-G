@@ -128,8 +128,16 @@ Verder heb je ook nog de volgende selectors:
 * adjacent sibling selectors
 * general sibling selectors
 
+<<<<<<< HEAD
 Maak een .html file waar je alledrie in gebruikt
 Maak een .html file waar je alle vijf in gebruikt
+=======
+<<<<<<< HEAD
+Maak een .html file waar je alledrie in gebruikt
+=======
+Maak een .html file waar je alle vijf in gebruikt
+>>>>>>> template/main
+>>>>>>> 0e9a0acd40e82b13cb8700b801219f6001798a62
 
 <br>
 

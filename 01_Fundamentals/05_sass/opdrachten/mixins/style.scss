@@ -1,0 +1,38 @@
+@import "./assets/buttons";
+@import "./assets/colors";
+
+@mixin button-mixin {
+    background-color: $button-color;
+    color: yellow;
+
+    &:hover {
+        background-color: $button-hover-color;
+        color: red;
+        
+    }
+}
+   .button { border-radius: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    @include button-mixin;
+    } 
+
+
+   
+
+@mixin color-transition($color-transition) {
+        margin: 20px;
+        height: 100px;
+        width: 100px;
+        background-color: $color-transition;
+        transition: background-color 1s;
+} 
+
+.colorChangingSquare {
+    @include color-transition($background-color);
+  }  
+  .colorChangingSquare:hover {
+    @include color-transition($background-hover-color);
+  }
+
+

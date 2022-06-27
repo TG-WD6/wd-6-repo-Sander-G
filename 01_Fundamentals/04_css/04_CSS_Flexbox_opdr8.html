@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Opdracht 8</title>
+
+
+  <style>
+    * {
+      margin: 0;
+    }
+
+
+
+
+
+   
+      .flex-container {
+      max-width: 800px;
+      flex-wrap: wrap;
+      display: flex;
+      background-color: white;
+      padding: 0px;
+    }
+
+    .flex-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 225px;
+      height: 225px;
+      border-radius: 20px;
+      border: 2px solid black;
+    }
+
+    .square1 {
+      background-color: rgb(214, 219, 135);
+    }
+
+    .square2 {
+      background-color: rgb(115, 156, 188);
+      border-left: 1px solid black;
+    }
+
+    .square3 {
+      background-color: rgb(139, 190, 115);
+      border-left: 1px solid black;
+    }
+
+    .square4 {
+      background-color: white;
+      border-left: 1px solid black;
+      border-top: 1px solid black;
+    }
+
+    .square5 {
+      background-color: black;
+      border-left: 1px solid black;
+      border-top: 1px solid black;
+      border-right: 1px solid black;
+      color: white;
+    }
+
+    .square6 {
+      background: rgb(2, 0, 36);
+      background: linear-gradient(90deg,
+         
+          rgb(73, 73, 167) 50%,
+          rgb(204, 247, 255) 100%);
+         
+
+      border-top: 1px solid black;
+    }
+  </style>
+
+
+
+</head>
+
+<body>
+  <h3>Opdracht 8</h3>
+
+  Zie het onderstaande voorbeeld en maak het na met flexbox.<br>
+  <img src="images/image22.png" alt="plaatje" width="700px"><br><br>
+  <div class="flex-container">
+    <div class="flex-item square1">
+      <h1>1</h1>
+    </div>
+    <div class="flex-item square2">
+      <h1>2</h1>
+    </div>
+    <div class="flex-item square3">
+      <h1>3</h1>
+    </div>
+    <div class="flex-item square4">
+      <h1>4</h1>
+    </div>
+    <div class="flex-item square5">
+      <h1>5</h1>
+    </div>
+    <div class="flex-item square6">
+      <h1>6</h1>
+    </div>
+  </div>
+
+</body>
+
+</html>
