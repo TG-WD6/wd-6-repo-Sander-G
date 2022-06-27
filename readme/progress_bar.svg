@@ -15,12 +15,12 @@
 
   
   <!-- positie progressie percentage = progressie px - 18px   -->
-  <g fill="#fff" text-anchor="middle" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="14">
-    <text x="182" y="30" fill="#010101" fill-opacity=".3">
+  <g fill="#fff" text-anchor="middle" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="22">
+    <text x="174" y="34" fill="#010101" fill-opacity=".3">
       20%
     </text>
     
-    <text x="182" y="29">
+    <text x="174" y="33">
       20%
     </text>
     
