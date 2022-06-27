@@ -17,7 +17,7 @@
 
 <h4>Opdracht 4.1</h4>
 <p>We gaan functies oefenen door bij het begin te beginnen:</p>
-<li>Maak een button en verbind er een functie aan. Zorg ervoor dat de functie in de console “Hello World” logt.</li>
+<li>1. Maak een button en verbind er een functie aan. Zorg ervoor dat de functie in de console “Hello World” logt.</li>
 
 
 <br>
@@ -34,27 +34,290 @@ function myFunction() {
     Sla dat ID op in een variabele via document.GetElementByID().</li>
 
 
-<input id="userInput" type="text" placeholder="Text">
-<button onclick="returnText ()">Submit</button>
+<!-- <form>
+        <input type="text" id="userInput" />
+        <input type="submit" onclick="userData();" />
+</form>
 <script>
-let input = document.getElementById("userInput").value;    
-function returnText(){
-        console.log(returnText)
-}
-</script>
+    function userData() {
+        let input = document.getElementById("userInput").value;
+        console.log(input);
+    }
+</script> -->
 
+<br>
 <li>3. Maak een functie die een parameter in de console logt.<br>
 Geef je input element vervolgens een onchange attribuut die deze functie aanroept.<br> 
-Natuurlijk wil deze functie ook een parameter gebruiken - gebruik hiervoor de ID variabele uit de vorige vraag.<br> 
+Natuurlijk wil deze functie ook een parameter gebruiken -<br>
+gebruik hiervoor de ID variabele uit de vorige vraag.<br> 
 Test het vervolgens door wat bij je input in te typen.</li>
+<br>
 
-<!-- <input id="knopjeEen" onchange="pressButtonOne ()">Knopje drukken!</input>
+
+<!-- <input type="text" id="userInput" onchange="logToConsole(value)" />
+
 <script>
-let knopjeEen = document.getElementById("knopjeEen").innerText    
-function pressButtonOne() {
-        console.log(knopjeEen)
+
+let inputElement = document.getElementById("userInput");
+
+function logToConsole(inputElement) {
+        console.log(inputElement);
+} 
+
+</script> -->
+
+<p>4. Geef je functie een return waarde, bijvoorbeeld de parameter * 2. <br>
+Maak vervolgens een nieuwe variabele “result”.<br> 
+Roep je functie op met een getal als parameter en wijs de return waarde toe aan “result”.<br>
+Log de variabele daarna in je console.</p>
+
+
+<!-- <input type="text" id="userInput" onchange="logToConsole(value)" />
+
+<script>
+let inputElement = document.getElementById("userInput");
+
+function logToConsole(userInput) {
+return userInput.value * 2;       
+} 
+let result = logToConsole(userInput);
+console.log(result);
+</script>
+ -->
+
+ <h4>Opdracht 4.2</h4>
+ <p>We gaan een paar veelgebruikte DOM methods onderzoeken.<br>
+Je bent inmiddels bekend met document.GetElementById().<br> 
+Veel andere DOM methods geven Arrays terug -<br>
+je hebt het inmiddels al vaker gelezen maar hoe je die verwerkt gaan we later nog leren 😃</p>
+
+<p>1. Onderzoek de volgende DOM methodes en gebruik ze in een voorbeeld:</p>
+
+<li>document.getElementsByClassName: </li>
+<p>Definitie: Returns an array-like object of all child elements which have all of the given class name(s).</p>
+<p>Voorbeeld: document.getElementsByClassName('red') - alle elementen die de class 'red' hebben</p>
+
+<li>document.getElementsByTagName</li>
+<p>Definitie: Returns an HTMLCollection of elements with the given tag name.</p>
+<p>Voorbeeld: let collection = document.getElementsByTagName("li"); - alle elementen met tag naam 'li'</p>
+
+
+<li>document.querySelector</li>
+<p>Definitie: Returns the first Element within the document that matches the specified selector,<br> or group of selectors. If no matches are found, null is returned.</p>
+<p>Voorbeeld: let el = document.querySelector(".myclass"); - het eerste element in het document met de class "myclass" wordt gegeven</p>
+
+<li>document.querySelectorAll</li>
+<p>Definitie: returns a static (not live) NodeList representing a list of the document's elements that match the specified group of selectors.</p>
+<p>Voorbeeld: let matches = document.querySelectorAll("div.note"); - geeft een lijst van alle &lt;div&gt; elementen met de class "note"</p>
+
+
+<li>element.innerHTML</li>
+<p>Definitie: gets or sets the HTML or XML markup contained within the element.</p>
+<p>voorbeeld:</p>
+
+<!-- <p id="voorbeeld" onclick="myFunction()">klik om mijn inhoud te wijzigen (innerHTML).</p>
+
+<script>
+function myFunction() {
+  document.getElementById("voorbeeld").innerHTML = "Ik ben veranderd!";
 }
 </script> -->
+
+<li>element.innerText</li> 
+<p>The innerText property sets or returns the text content of an element.</p>
+<p> voorbeeld / verschil innerText innerHTML en textContent:</p>
+
+
+
+<!-- <p id="myP">   This element has extra spacing   and contains <span>a span element</span>.</p>
+
+<button onclick="getinnerHTML()">Get innerHTML</button>
+<button onclick="getinnerText()">Get innerText</button>
+<button onclick="gettextContent()">Get textContent</button>
+
+<pre id="demo"></pre>
+
+
+
+<script>
+function getinnerText() {
+  let text = document.getElementById("myP").innerText;
+  document.getElementById("demo").innerText = text;
+}
+
+function getinnerHTML() {
+  let text = document.getElementById("myP").innerHTML;
+  document.getElementById("demo").innerText = text;
+}
+
+function gettextContent() {
+  let text = document.getElementById("myP").textContent;
+  document.getElementById("demo").innerText = text;
+}
+</script> -->
+
+
+<p>2. Bij opdracht 4.1.3 heb je een input als parameter meegegeven.<br> 
+Roep die functie nu aan met een oninput ipv onchange, en console.log() de parameter.value ipv de parameter.<br>
+Zie je de verschillen als je nu wat intypt?</p>
+
+
+<!-- <input type="text" id="userInput" oninput="logToConsole(value)" />
+
+<script>
+
+let inputElement = document.getElementById("userInput");
+
+function logToConsole(inputElement) {
+        console.log(inputElement);
+} 
+
+</script> -->
+
+<p>het verschil is dat er nu per verandering in input (bv extra letter) er een nieuwe line in de 
+        console wordt toegevoegd waar deze verandering is weergegeven.
+</p>
+
+
+
+<h4>Opdracht 4.3</h4>
+<p>1. Maak een functie randomNumber() en verbindt die aan een button. Zorg dat de functie Math.random() in de console logt.<br>
+        Wat merk je op als je deze meerdere keren gebruikt?</p>
+        <p>- Wat opvalt is dat telkens een waarde tussen nul en 1 wordt gegeven.</p>
+
+<!-- <button onclick="randomNum()">Random nummer!</button>
+<script>
+
+function randomNum() {
+        console.log(Math.random());
+}
+</script> -->
+
+
+<p>Math.random() geeft dus een getal 0 >= x &lt; 1 terug - het kan wel 0 zijn, maar nooit 1.<br>
+         Als je die laat afronden met Math.round(), zal het vaker afronden naar beneden dan naar boven.<br>
+
+        Als je een willekeurig getal wil tonen, moet je Math.floor() gebruiken op Math.random(). Als je dit zo doet, krijg je altijd 0 terug.</p>
+
+<p>2. Verander je functie nu dat hij een parameter x gebruikt, en zorg dat hij het volgende in je console logt: Math.floor(Math.random() * x).<br>
+Test nu je functie met verschillende waardes voor x. Valt iets je op?</p>
+<p> de functie geeft nu een random getal tussen 0 en x, waarbij de waarde nooit x zelf bereikt </p>
+
+<!-- <button onclick="randomNum()">Random nummer!</button>
+<script>
+let x = 10;
+function randomNum() {
+        console.log(Math.floor(Math.random() * x));
+}
+</script> -->
+
+<p>3. Er zijn nog 2 belangrijke Math methods die handig zijn om te kennen. Onderzoek wat Math.min() en Math.max() doen.<br>
+Kan je van beide al een voorbeeld geven?</p>
+<p>de Math.min() en Math.max() methods zorgen ervoor dat de laagste resp. hoogste ingegeven waarde worden teruggegeven.</p>
+<p>Definitie: The static function Math.min() returns the lowest-valued number passed into it,<br> 
+ or NaN if any parameter isn't a number and can't be converted into one.</p>
+
+<!-- <script>console.log(Math.min(2, 3, 1));
+        // expected output: 1
+        </script> -->
+
+<!-- <script>console.log(Math.max(2, 3, 1));
+        // expected output: 3
+        </script>         -->
+
+<h4>Opdracht 4.4</h4>
+<p>We eindigen deze oefeningen met een lastige:</p>
+<li>1.Schrijf een functie waar je een naam aan mee kan geven. Laat de naam vergelijken met de namen van mensen in je groepje.<br> 
+Wanneer je functie de naam wel/niet herkent moet dat als boodschap teruggegeven worden.</li>
+
+
+<!-- <script>
+        
+function isACooler(naam) {
+  let result;
+  if (naam === 'junier' || naam === 'bart' || naam === 'marko' || naam === 'szymon' || naam == 'sander')
+   {
+    result = `${naam} is one of the Coolers`;
+  } else {
+    result = `${naam} is not one of the Coolers`;
+  }
+  return result;
+}
+
+console.log(isACooler('junier'));
+</script> -->
+
+
+<li>2. Schrijf een 2e functie die de eerste functie aanroept,<br>
+        en vervolgens de teruggegeven boodschap in een div element op je pagina toont.<br>
+        Denk aan de DOM methods!</li><br>
+<!-- div needs to appear before the script!! -->
+<p>the div is below this line:</p>
+<div id="thisDiv">output comes here</div><br>
+
+<!-- <script>
+
+        function isACooler(naam) {
+                let result;
+                if (naam.toLowerCase() == 'junier' ||
+                        naam.toLowerCase() == 'bart' ||
+                        naam.toLowerCase() == 'marko' ||
+                        naam.toLowerCase() == 'szymon' ||
+                        naam.toLowerCase() == 'sander') {
+                        result = `${naam} is one of the Coolers!`;
+                } else {
+                        result = `${naam} is not one of the Coolers!`;
+                }
+                return result;
+        }
+
+
+        function membership(Group) {
+                document.getElementById("thisDiv").innerHTML = Group
+
+        }
+
+
+
+        let x = isACooler("Sander")
+        membership(x)
+
+</script> -->
+    
+
+<li>3. Schrijf nu het bovenstaande nogmaals, maar gebruik dit keer Arrow Functions.<br>
+Als het niet overal lukt is dat niet erg!</li><br>
+
+<!-- div needs to appear before the script!! -->
+<p>the div 'thisDiv2' is below this line:</p>
+<div id="thisDiv2">output comes here</div><br>
+<script>
+
+        let isACooler2 = (naam) => {
+                let result;
+                if (naam.toLowerCase() == 'junier' ||
+                        naam.toLowerCase() == 'bart' ||
+                        naam.toLowerCase() == 'marko' ||
+                        naam.toLowerCase() == 'szymon' ||
+                        naam.toLowerCase() == 'sander') {
+                        result = `${naam} is one of the Coolers!`;
+                } else {
+                        result = `${naam} is not one of the Coolers!`;
+                }
+                return result;
+        }
+
+
+        let membership2 = (Group) => {document.getElementById("thisDiv2").innerHTML = Group}
+
+        let x = isACooler2 ("Marko")
+        membership2(x)
+
+</script>
+
+
+
+
 
 
 

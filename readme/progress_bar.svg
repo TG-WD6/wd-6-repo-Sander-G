@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+  <linearGradient id="a" x2="0" y2="100%">
+    <stop offset="0" stop-color="#bbb" stop-opacity=".1"/>
+    <stop offset="1" stop-opacity=".1"/>
+  </linearGradient>
+
+  <rect rx="4" x="0" width="400" height="25" fill="#555" />
+  <rect rx="4" x="0" width="76" height="25" fill="#f0ad4e" />
+  <!-- 400px / 26 weken =  15.3 px per week, nu wk 5 = ongeveer 77px-->
+  <!-- 100/26 * 5 weken = ongeveer 19 %-->
+
+
+
+  <!-- 1000 px / 25 weken = 40 px per week
+  100/25 = 4% progressie per week -->
+
+
+
+
+
+  <rect rx="4" width="76" height="25" fill="url(#a)" />
+
+  <g fill="#fff" text-anchor="middle" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="11">
+    <text x="62" y="17" fill="#010101" fill-opacity=".3">
+      19%
+    </text>
+    <text x="62" y="16">
+      19%
+    </text>
+  </g>
+</svg>

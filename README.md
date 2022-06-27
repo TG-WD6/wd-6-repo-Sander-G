@@ -1,26 +1,85 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=7862839&assignment_repo_type=AssignmentRepo)
 =======
 >>>>>>> 0e9a0acd40e82b13cb8700b801219f6001798a62
 # Template Web Development
+=======
+>>>>>>> 14a2477c822dd391bbaf6e08794136cf51c91177
 
-Deze repository zal al je werk gedurende de opleiding bevatten. De inhoud is aan het begin genoeg voor de eerste maand - later ga je hier meer aan toevoegen. Zo wordt het een verslag van jouw leerpad.
+# Sander Grunnekemeijer
+### Welkom in mijn TechGrounds repository! &nbsp; 
+&nbsp; 
+### Over mij: 
+Na mijn studie Psychologie in Groningen heb ik enkele jaren in Den Haag gewoond en gewerkt maar  inmiddels ben ik weer woonachtig in Twente, waar ik ook ben opgegroeid. Ik heb een passie voor fotografie, design & usability en wil dit graag meenemen in mijn ontwikkeling tot front-end developer.
 
-Een groot deel van de web development opdrachten zijn praktijkopdrachten, maar een aantal is ook theorie. De theorie-opdrachten mag je samen of apart in een .md bestand opslaan. Voor de praktijkopdrachten dien je bij elke opdracht een aparte file te gebruiken!
+In het verleden heb ik mij als autodidacte techneut bezig gehouden met het maken van websites en allerlei computer gerelateerde projecten. Ik wil hier graag meer over leren om vanuit een solide basis een carrière switch te kunnen maken richting front-end development.    
+
+Sinds begin mei 2022 volg ik daarom bij TechGrounds een traineeship om opgeleid te worden tot junior front-end developer. Het traineeship duurt zes maanden en omvat zowel hard- & softskills, die een samenhangend geheel vormen om aansluitend direct als junior developer aan de slag te kunnen. Meer informatie over de TechGrounds traineeships vind je [hier](https://techgrounds.nl).  
 
 
-## Organisation is Key
+In dit repository zijn de door mij gemaakte opgaven en eindopdrachten per behandeld onderwerp te vinden.  
+&nbsp;   
+### Progress bar: 
+![](./readme/progress_bar.svg)  
+Bovenstaande SVG progressbar geeft aan hoe ver het traineeship inmiddels gevorderd is en zal regelmatig handmatig door mij worden ge-update   ...tot ik een manier heb gevonden / geleerd om dit te automatiseren.
 
-Een goede structuur van je project zorgt ervoor dat andere mensen er gemakkelijker en sneller mee kunnen werken. Dit betekent dat je niet teveel files in 1 folder wil gooien, en dat je files/folders duidelijke namen en rollen moeten hebben.
+ &nbsp; 
+### Onderwerpen die tot dusverre in het traineeship aan bod zijn gekomen:  
 
-Veel opdrachten vragen dat je je werk deelt of door mede-deelnemers laat reviewen. Als zij dit makkelijk kunnen vinden, werkt iedereen sneller!
+Softskills:
+- Scrum methodiek
+- Project management met Jira
+- Peer assisted learning
 
-Let op! Probeer spaties en speciale tekens (zoals &) te vermijden in de namen van je folders. Die maken het veel lastiger om met de terminal te werken en kunnen later veel problemen opleveren. Wil je echt graag een spatie gebruiken? Vervang_ze_met_een_underscore.
 
-## Make it your own
+Hardskills:
+ - Gebruik van Git / Github
+ - HTML Basics
+ - CSS Basics
+ - Sass CSS preprocessor
 
-Deze repo, en dus ook deze README.MD, zijn van jou. Daarom moet je deze README.MD hernoemen en vervangen met je eigen README.MD die jou introduceert.
 
-## Mark-down tips
+ 
 
-Weet je nog niet hoe je een .md file moet schrijven? Geen zorgen, het is niet heel ingewikkeld. [Hier](https://www.markdownguide.org/basic-syntax/) kan je een goede uitleg vinden. Markdown leren is waardevol - er zijn steeds meer projecten op Github die zelf geen code bevatten, zoals [deze markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
+
+
+
+
+
+ &nbsp; 
+### Side-projects die ik in de komende maanden wil ondernemen:
+
+- Het maken van mijn eigen portfolio website. 
+- Bedrijfswebsite voor een Yoga lerares.
+- Het automatiseren van de progressbar en verder 'style hacken' van deze README.md. 
+&nbsp;   
+&nbsp;   
+
+### Recaps:  
+###### Na 1 maand:  
+##### _"De eerste maand zit er al op, ongelooflijk hoe mijn begrip en skills zijn gegroeid in deze korte tijd. Het is erg interessant, hard werken en soms heb je het gevoel dat dingen nog op z'n plaats moeten vallen. Het peer-assisted leren helpt hierbij: de communicatie binnen de scrum groepjes verloopt steeds beter, als problemen zijn overwonnen vieren we deze kleine stappen richting einddoel. Verder met JavaScript!"_ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+![](./readme/scrum_cert.png) 
+
+
+
+
+
+
