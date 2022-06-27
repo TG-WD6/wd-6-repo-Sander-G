@@ -10,6 +10,15 @@
   <!-- 400px / 26 weken =  15.3 px per week, nu wk 5 = ongeveer 77px-->
   <!-- 100/26 * 5 weken = ongeveer 19 %-->
 
+
+
+  <!-- 1000 px / 25 weken = 40 px per week
+  100/25 = 4% progressie per week -->
+
+
+
+
+
   <rect rx="4" width="76" height="25" fill="url(#a)" />
 
   <g fill="#fff" text-anchor="middle" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="11">
