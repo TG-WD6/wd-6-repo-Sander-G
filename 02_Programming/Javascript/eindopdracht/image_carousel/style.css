@@ -1,0 +1,14 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin:0;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
