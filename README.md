@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=7862839&assignment_repo_type=AssignmentRepo)
-=======
->>>>>>> 0e9a0acd40e82b13cb8700b801219f6001798a62
-# Template Web Development
-=======
->>>>>>> 14a2477c822dd391bbaf6e08794136cf51c91177
-
 # Sander Grunnekemeijer
 ### Welkom in mijn TechGrounds repository! &nbsp; 
 &nbsp; 
@@ -22,7 +13,7 @@ In dit repository zijn de door mij gemaakte opgaven en eindopdrachten per behand
 &nbsp;   
 ### Progress bar: 
 ![](./readme/progress_bar.svg)  
-Bovenstaande SVG progressbar geeft aan hoe ver het traineeship inmiddels gevorderd is en zal regelmatig handmatig door mij worden ge-update   ...tot ik een manier heb gevonden / geleerd om dit te automatiseren.
+Bovenstaande progressbar geeft aan hoe ver het traineeship inmiddels gevorderd is en zal regelmatig handmatig door mij worden ge-update   ...tot ik een manier heb gevonden om dit te automatiseren.
 
  &nbsp; 
 ### Onderwerpen die tot dusverre in het traineeship aan bod zijn gekomen:  
