@@ -1,50 +1,42 @@
-*, *::after, *::before {
+*,
+*::after,
+*::before {
     box-sizing: border-box;
-    margin:0;
+    margin: 0;
 }
 
 body {
     display: grid;
     place-items: center;
     min-height: 100vh;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
- 
+  
+
 
 
 }
 
 
 .television {
-   grid-row-start: 1;
-   grid-column-start: 1;
-   background-image: url("./pix/old_CRT2.png");
-    background-size: cover;
-    background-position: center;
-    
-    
-    
-    top: 0px;
-    left: 0px;
+    background-image: url("./pix/old_CRT2.png");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
     width: 100%;
-    height: 100%;
-  
-    
- 
-    
-    
-
+    padding-bottom: 75%;
+    z-index: 5;
 }
 
 
 .carousel_wrapper {
 
     width: 50vw;
+    margin-left: -10em;
     overflow: hidden;
-    outline: 2rem solid #0e0e0e;
+    outline: 4rem solid #0e0e0e;
     border-radius: .5rem;
     margin: none;
-    position: absolute;    
+    position: absolute;
+
 }
 
 
@@ -53,21 +45,21 @@ body {
 
 img {
     width: 100%;
-    height:100%;
+    height: 100%;
     object-fit: cover;
 }
 
 .carousel {
     display: flex;
     height: 100%;
-   
+
 }
 
 
 
 span {
     position: absolute;
-    z-index:10;
+    z-index: 10;
     top: 50%;
     transform: translateY(-50%);
     color: #fff;
@@ -81,17 +73,20 @@ span {
     justify-content: center;
     cursor: pointer;
     transition: 200ms ease-in-out background-color;
-    }
-    .leftButton {
-        left: 5%;
-    }
-    .rightButton {
-        right: 5%
-    }
+}
 
-    span:hover {
-        background-color: rgba(14, 14, 14, 1);
-    }
-    span:active {
-        transform: translateY(-50%) scale(.9);
-    }
+.leftButton {
+    left: 5%;
+}
+
+.rightButton {
+    right: 5%
+}
+
+span:hover {
+    background-color: rgba(14, 14, 14, 1);
+}
+
+span:active {
+    transform: translateY(-50%) scale(.9);
+}
