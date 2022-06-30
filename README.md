@@ -1,4 +1,3 @@
-
 # Sander Grunnekemeijer
 ### Welkom in mijn TechGrounds repository! &nbsp; 
 &nbsp; 
@@ -14,7 +13,7 @@ In dit repository zijn de door mij gemaakte opgaven en eindopdrachten per behand
 &nbsp;   
 ### Progress bar: 
 ![](./readme/progress_bar.svg)  
-Bovenstaande SVG progressbar geeft aan hoe ver het traineeship inmiddels gevorderd is en zal regelmatig handmatig door mij worden ge-update   ...tot ik een manier heb gevonden / geleerd om dit te automatiseren.
+Bovenstaande progressbar geeft aan hoe ver het traineeship inmiddels gevorderd is en zal regelmatig handmatig door mij worden ge-update   ...tot ik een manier heb gevonden om dit te automatiseren.
 
  &nbsp; 
 ### Onderwerpen die tot dusverre in het traineeship aan bod zijn gekomen:  
