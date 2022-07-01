@@ -1,42 +1,33 @@
-const pokedex = document.getElementById("pokedex");
 
-console.log(pokedex);
+// https://www.youtube.com/watch?v=5CFafWpWwxo
+// -> make proxy server to avoid cors errors
 
 
-const fetchPokemon = () => {
+const url = 'http://localhost:3000/';
+const getTransformer = () => {
+    fetch(url)
+     .then(res => res.json())
+    //  .then(data => console.log(data))
+     .then(data => {
+        const transformer = {};
+        transformer['id'] = data.id;
+        transformer['name'] = data.name;
+        transformer['allegiance'] = data.allegiance;
+        transformer['allegiance_name'] = data.allegiance_name;
+        transformer['image'] = data.image; 
+        transformer['subgroup'] = data.subgroup;
+        transformer['subgroup_name'] = data.subgroup_name;
+        transformer['role'] = data.role;
 
-    const promises = [];     
-    for (let i = 1; i<= 150; i++){
-    const url = `https://pokeapi.co/api/v2/pokemon/${i}`;
-    promises.push(fetch(url).then((res) => res.json()));
+      //   transformer['description'] = data.description;
+        console.log(transformer);
+     })
+  
+  
+  
+  
     }
-       
-    Promise.all(promises).then((results) => {
-        const pokemon = results.map((data) => ({
-                name: data.name,
-                id: data.id,
-                image: data.sprites['front_default'],
-                type: data.types.map((type) => type.type.name).join(', ')
-        }));
-        displayPokemon(pokemon);
-    });
-};
-          
-const displayPokemon = (pokemon) => {
-    console.log(pokemon);
-    const pokemonHTMLString = pokemon.map (arrayItem => `
-    <li>
-    <img src="${arrayItem.image}"/>
-    <h2>${arrayItem.id}. ${arrayItem.name}</h2>
-    <p>Type: ${arrayItem.type}</p>
-    </li>
-    ` )
-    .join('');
 
+  getTransformer ();
 
-    pokedex.innerHTML = pokemonHTMLString;
-};
-
-
-fetchPokemon();
- 
+  
