@@ -42,7 +42,7 @@ Hardskills:
 ### Side-projects die ik in de komende maanden wil ondernemen:
 
 - Het maken van mijn eigen portfolio website. 
-- Bedrijfswebsite voor een Yoga lerares.
+- Bedrijfswebsite voor een ZZP'er.
 - Het automatiseren van de progressbar en verder 'style hacken' van deze README.md. 
 &nbsp;   
 &nbsp;   
