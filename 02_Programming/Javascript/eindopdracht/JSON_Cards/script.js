@@ -1,6 +1,6 @@
-const data = ('./data.json');
+const data = ('./files/data.json');
 const fetchTransformer = () => {
-  fetch('./data.json')
+  fetch('./files/data.json')
     .then(function (response) {
       return response.json();
     })
