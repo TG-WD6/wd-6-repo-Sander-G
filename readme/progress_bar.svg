@@ -6,22 +6,22 @@
   </linearGradient>
 
   <rect rx="4" x="0" width="1000" height="50" fill="#555" />
-  <rect rx="4" x="0" width="200" height="50" fill="#f0ad4e" />
-  <rect rx="4" width="200" height="50" fill="url(#a)" />  
+  <rect rx="4" x="0" width="240" height="50" fill="#f0ad4e" />
+  <rect rx="4" width="240" height="50" fill="url(#a)" />  
  
   <!-- bar = 1000 px / 25 weken = 40 px per week -->
   <!-- 100/25 = 4% progressie per week -->
-  <!-- 27/6 ->  5 weken klaar = 200px & 20% -->
+  <!-- 4/7 ->  6 weken klaar = 240px & 24% -->
 
   
-  <!-- positie progressie percentage = progressie px - 18px   -->
+  <!-- positie progressie percentage = progressie px - 24px   -->
   <g fill="#fff" text-anchor="middle" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="22">
-    <text x="174" y="34" fill="#010101" fill-opacity=".3">
-      20%
+    <text x="216" y="34" fill="#010101" fill-opacity=".3">
+      24%
     </text>
     
-    <text x="174" y="33">
-      20%
+    <text x="216" y="33">
+      24%
     </text>
     
   </g>
