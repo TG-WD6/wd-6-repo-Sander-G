@@ -5,36 +5,139 @@
     margin: 0;
 }
 
-
 @font-face {
     font-family: transformerFont;
     src: url("./files/transformerFont.ttf");
-
 }
+
 body {
-
-    background: #0e0e0e;
+    background: #091921;
+/* bijna zwart #091921 */
     color: whitesmoke;
-
 }
-.wrapper { 
+
+.logoWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards_wrapper { 
     display: grid;
     place-items: center;
     margin-top: 1rem;
 
-
 }
-#logo {
-    display: block;
+.logo {
     height:150px;
-    margin: 2rem 1rem 2rem 1rem;
+    margin: 2rem 1rem 1rem 1rem; 
 }
-h1 {
+
+.title {
     font-family: 'transformerFont', sans-serif;
     font-weight: 700;
     font-size: 40px;
     color: whitesmoke;
-    text-align: center;
+    margin-top: 2rem;
 }
 
+h2 { 
+    font-family: 'helvetica neue', sans-serif;
+    font-stretch: extra-expanded;
+    font-size: 20px;
+    font-weight: light;
+    color: whitesmoke;
+    margin-top: 5px;
+    text-transform: uppercase; 
+}
 
+h3 { 
+    font-family: 'helvetica neue', sans-serif;
+    font-size: 14px;
+    color: whitesmoke;
+    font-weight: light;
+    margin-top: 2px; 
+}
+
+p { 
+    font-family: 'helvetica neue', sans-serif;
+    font-size: 12px;
+    color: whitesmoke;
+    font-weight: light;
+    margin-bottom: 5px; 
+}
+
+.card__wrapper {
+    background-color: rgb(96, 2, 4);
+    border: 2px solid rgb(217, 214, 202);
+    text-align: center;
+    border-radius: 5px;  
+}
+
+.transformer__image {
+    margin-bottom: -4px;
+    overflow: hidden;
+    object-fit: contain;
+    cursor: pointer;
+    transition: 0.3s all ease;
+   }
+
+.transformer__image:hover {
+ transform: scale(0.95);
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 1rem;
+    gap: 1rem;
+}
+
+/* .modal {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8); 
+    color:rgb(217, 214, 202);
+    z-index: 1;
+    overflow: auto;
+    /* weg commenten voor edit */
+    /* opacity: 0;
+    pointer-events: 0; */
+/* = pointer events uitzetten bij opacity nul ->  */
+/* }
+.modal__content {
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.modal__img {
+    width: 80%;
+    max-width: 700px;
+    animation: zoom .3s linear;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+.close {
+    position: absolute;
+    top: 1em;
+    right: 1.5em;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.close:hover{
+    transform: scale(1.2);
+}  */

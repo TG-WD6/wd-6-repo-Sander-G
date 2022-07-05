@@ -1,911 +1,911 @@
 [
   {
-    "Name": "Air Rade",
+    "Name": "Air Raid",
     "Allegiance": "Autobot",
-    "Subgroup": 2,
+    "Subgroup": "Aerialbot",
     "Type": "Warrior",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609788899/transformers-api/profiles/001-Air%20Rade.jpg"
   },
   {
     "Name": "Arblus",
     "Allegiance": "None",
-    "Subgroup": 3,
+    "Subgroup": "Lithone",
     "Type": "None",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609788909/transformers-api/profiles/002-Arblus.jpg"
   },
   {
     "Name": "Arcee",
     "Allegiance": "Autobot",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Warrior",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609788918/transformers-api/profiles/003-Arcee.jpg"
   },
   {
     "Name": "Astrotrain",
     "Allegiance": "Decepticon",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Military Transport",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609788926/transformers-api/profiles/004-Astrotrain.jpg"
   },
   {
     "Name": "Beachcomber",
     "Allegiance": "Autobot",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Geologist",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609788936/transformers-api/profiles/005-Beachcomber.jpg"
   },
   {
     "Name": "Blades",
     "Allegiance": "Autobot",
-    "Subgroup": 4,
+    "Subgroup": "Protectobot",
     "Type": "Air Support",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609788946/transformers-api/profiles/006-Blades.jpg"
   },
   {
     "Name": "Blast Off",
     "Allegiance": "Decepticon",
-    "Subgroup": 5,
+    "Subgroup": "Combaticon",
     "Type": "Space Warrior",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609788955/transformers-api/profiles/007-Blast%20Off.jpg"
   },
   {
     "Name": "Blaster",
     "Allegiance": "Autobot",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Communications",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609788966/transformers-api/profiles/008-Blaster.jpg"
   },
   {
     "Name": "Blitzwing",
     "Allegiance": "Decepticon",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Ground & Air Commando",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609788974/transformers-api/profiles/009-Blitzwing.jpg"
   },
   {
     "Name": "Bluestreak",
     "Allegiance": "Autobot",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Gunner",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609788984/transformers-api/profiles/010-Blue%20Streak.jpg"
   },
   {
     "Name": "Blurr",
     "Allegiance": "Autobot",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Data Courier",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609788994/transformers-api/profiles/011-Blurr.jpg"
   },
   {
     "Name": "Bombshell",
     "Allegiance": "Decepticon",
-    "Subgroup": 6,
+    "Subgroup": "Insecticon",
     "Type": "Psychological Warfare",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789004/transformers-api/profiles/012-Bombshell.jpg"
   },
   {
     "Name": "Bonecrusher",
     "Allegiance": "Decepticon",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Demolitions",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789014/transformers-api/profiles/013-Bonecrusher.jpg"
   },
   {
     "Name": "Brawl",
     "Allegiance": "Decepticon",
-    "Subgroup": 5,
+    "Subgroup": "Combaticon",
     "Type": "Ground Assault",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789026/transformers-api/profiles/014-Brawl.jpg"
   },
   {
     "Name": "Brawn",
     "Allegiance": "Autobot",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Demolitions",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789037/transformers-api/profiles/015-Brawn.jpg"
   },
   {
     "Name": "Breakdown",
     "Allegiance": "Decepticon",
-    "Subgroup": 7,
+    "Subgroup": "Stunticon",
     "Type": "Scout",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789050/transformers-api/profiles/016-Breakdown.jpg"
   },
   {
     "Name": "Broadside",
     "Allegiance": "Autobot",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Air & Sea Assault",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789059/transformers-api/profiles/017-Broadside.jpg"
   },
   {
     "Name": "Bruticus",
     "Allegiance": "Decepticon",
-    "Subgroup": 5,
+    "Subgroup": "Combaticon",
     "Type": "Warrior",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789068/transformers-api/profiles/018-Bruticus.jpg"
   },
   {
     "Name": "Bumblebee",
     "Allegiance": "Autobot",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Espionage",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789077/transformers-api/profiles/019-Bumblebee.jpg"
   },
   {
     "Name": "Buzzsaw",
     "Allegiance": "Decepticon",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Reconnaissance",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789087/transformers-api/profiles/020-Buzzsaw.jpg"
   },
   {
     "Name": "Cliffjumper",
     "Allegiance": "Autobot",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Warrior",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789096/transformers-api/profiles/021-Cliffjumper.jpg"
   },
   {
     "Name": "Cosmos",
     "Allegiance": "Autobot",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Reconnaissance & Communications",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789104/transformers-api/profiles/022-Cosmos.jpg"
   },
   {
     "Name": "Cyclonus",
     "Allegiance": "Decepticon",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Saboteur",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789114/transformers-api/profiles/023-Cyclonus.jpg"
   },
   {
     "Name": "Deadend",
     "Allegiance": "Decepticon",
-    "Subgroup": 7,
+    "Subgroup": "Stunticon",
     "Type": "Warrior",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789123/transformers-api/profiles/024-Deadend.jpg"
   },
   {
     "Name": "Defensor",
     "Allegiance": "Autobot",
-    "Subgroup": 4,
+    "Subgroup": "Protectobot",
     "Type": "Defensive Operations",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789133/transformers-api/profiles/025-Defensor.jpg"
   },
   {
     "Name": "Devastator",
     "Allegiance": "Decepticon",
-    "Subgroup": 8,
+    "Subgroup": "Constructicon",
     "Type": "Warrior",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789142/transformers-api/profiles/026-Devastator.jpg"
   },
   {
     "Name": "Dirge",
     "Allegiance": "Decepticon",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Warrior",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789152/transformers-api/profiles/027-Dirge.jpg"
   },
   {
     "Name": "Divebomb",
     "Allegiance": "Decepticon",
-    "Subgroup": 9,
+    "Subgroup": "Predacon",
     "Type": "Aerial Assault",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789160/transformers-api/profiles/028-Divebomb.jpg"
   },
   {
     "Name": "Drag Strip",
     "Allegiance": "Decepticon",
-    "Subgroup": 7,
+    "Subgroup": "Stunticon",
     "Type": "Warrior",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789169/transformers-api/profiles/029-Drag%20Strip.jpg"
   },
   {
     "Name": "Eject",
     "Allegiance": "Autobot",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Electronic Surveillance",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789178/transformers-api/profiles/030-Eject.jpg"
   },
   {
     "Name": "Fireflight",
     "Allegiance": "Autobot",
-    "Subgroup": 2,
+    "Subgroup": "Aerialbot",
     "Type": "Reconnaissance",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789186/transformers-api/profiles/031-Fireflight.jpg"
   },
   {
     "Name": "First Aid",
     "Allegiance": "Autobot",
-    "Subgroup": 4,
+    "Subgroup": "Protectobot",
     "Type": "Doctor",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789195/transformers-api/profiles/032-First%20Aid.jpg"
   },
   {
     "Name": "Frenzy",
     "Allegiance": "Decepticon",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Warrior",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789205/transformers-api/profiles/033-Frenzy.jpg"
   },
   {
     "Name": "Galvatron",
     "Allegiance": "Decepticon",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Decepticon City Commander",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789215/transformers-api/profiles/034-Galvatron.jpg"
   },
   {
     "Name": "Gears",
     "Allegiance": "Autobot",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Transport & Reconnaissance",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789224/transformers-api/profiles/035-Gears.jpg"
   },
   {
     "Name": "Grapple",
     "Allegiance": "Autobot",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Architect",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789241/transformers-api/profiles/036-Grapple.jpg"
   },
   {
     "Name": "Grimlock",
     "Allegiance": "Autobot",
-    "Subgroup": 10,
+    "Subgroup": "Dinobot",
     "Type": "Dinobot Commander",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789253/transformers-api/profiles/037-Grimlock.jpg"
   },
   {
     "Name": "Groove",
     "Allegiance": "Autobot",
-    "Subgroup": 4,
+    "Subgroup": "Protectobot",
     "Type": "Scout",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789266/transformers-api/profiles/038-Groove.jpg"
   },
   {
     "Name": "Headstrong",
     "Allegiance": "Decepticon",
-    "Subgroup": 9,
+    "Subgroup": "Predacon",
     "Type": "Ground Assault",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789275/transformers-api/profiles/039-Headstrong.jpg"
   },
   {
     "Name": "Hoist",
     "Allegiance": "Autobot",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Maintainance",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789283/transformers-api/profiles/040-Hoist.jpg"
   },
   {
     "Name": "Hook",
     "Allegiance": "Decepticon",
-    "Subgroup": 8,
+    "Subgroup": "Constructicon",
     "Type": "Surgical Engineer",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789293/transformers-api/profiles/041-Hook.jpg"
   },
   {
     "Name": "Hot Rod",
     "Allegiance": "Autobot",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Cavalier",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789304/transformers-api/profiles/042-Hot%20Rod.jpg"
   },
   {
     "Name": "Hotspot",
     "Allegiance": "Autobot",
-    "Subgroup": 4,
+    "Subgroup": "Protectobot",
     "Type": "Protectobot Leader",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789314/transformers-api/profiles/043-Hotspot.jpg"
   },
   {
     "Name": "Hound",
     "Allegiance": "Autobot",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Scout",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789323/transformers-api/profiles/044-Hound.jpg"
   },
   {
     "Name": "Huffer",
     "Allegiance": "Autobot",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Construction Engineer",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789333/transformers-api/profiles/045-Huffer.jpg"
   },
   {
     "Name": "Inferno",
     "Allegiance": "Autobot",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Search & Rescue",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789347/transformers-api/profiles/046-Inferno.jpg"
   },
   {
     "Name": "Ironhide",
     "Allegiance": "Autobot",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Security",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789356/transformers-api/profiles/047-Ironhide.jpg"
   },
   {
     "Name": "Jazz",
     "Allegiance": "Autobot",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Special Operations & Saboteur",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789365/transformers-api/profiles/048-Jazz.jpg"
   },
   {
     "Name": "Jetfire",
     "Allegiance": "Autobot",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Air Guardian",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789374/transformers-api/profiles/049-Jetfire.jpg"
   },
   {
     "Name": "Kickback",
     "Allegiance": "Decepticon",
-    "Subgroup": 6,
+    "Subgroup": "Insecticon",
     "Type": "Espionage",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789390/transformers-api/profiles/050-Kickback.jpg"
   },
   {
     "Name": "Kranix",
     "Allegiance": "None",
-    "Subgroup": 3,
+    "Subgroup": "Lithone",
     "Type": "None",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789399/transformers-api/profiles/051-Kranix.jpg"
   },
   {
     "Name": "Kup",
     "Allegiance": "Autobot",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Warrior",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789408/transformers-api/profiles/052-Kup.jpg"
   },
   {
     "Name": "Laserbeak",
     "Allegiance": "Decepticon",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Interrogation",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789417/transformers-api/profiles/053-Laserbeak.jpg"
   },
   {
     "Name": "Long Haul",
     "Allegiance": "Decepticon",
-    "Subgroup": 8,
+    "Subgroup": "Constructicon",
     "Type": "Transport",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789427/transformers-api/profiles/054-Long%20Haul.jpg"
   },
   {
     "Name": "Megatron",
     "Allegiance": "Decepticon",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Decepticon Leader",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789436/transformers-api/profiles/055-Megatron.jpg"
   },
   {
     "Name": "Menasor",
     "Allegiance": "Decepticon",
-    "Subgroup": 7,
+    "Subgroup": "Stunticon",
     "Type": "Super Warrior",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789464/transformers-api/profiles/056-Menasor.jpg"
   },
   {
     "Name": "Metroplex",
     "Allegiance": "Autobot",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Battle Station",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789475/transformers-api/profiles/057-Metroplex.jpg"
   },
   {
     "Name": "Mirage",
     "Allegiance": "Autobot",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Counter-Intelligence",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789504/transformers-api/profiles/058-Mirage.jpg"
   },
   {
     "Name": "Mixmaster",
     "Allegiance": "Decepticon",
-    "Subgroup": 8,
+    "Subgroup": "Constructicon",
     "Type": "Materials Fabrication",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789528/transformers-api/profiles/059-Mixmaster.jpg"
   },
   {
     "Name": "Motormaster",
     "Allegiance": "Decepticon",
-    "Subgroup": 7,
+    "Subgroup": "Stunticon",
     "Type": "Stunticon Leader",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789572/transformers-api/profiles/060-Motormaster.jpg"
   },
   {
     "Name": "Octane",
     "Allegiance": "Decepticon",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Fueler",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789581/transformers-api/profiles/061-Octane.jpg"
   },
   {
     "Name": "Omega Supreme",
     "Allegiance": "Autobot",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Defense Base",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789591/transformers-api/profiles/062-Omega%20Supreme.jpg"
   },
   {
     "Name": "Onslaught",
     "Allegiance": "Decepticon",
-    "Subgroup": 5,
+    "Subgroup": "Combaticon",
     "Type": "Combaticon Commander",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789602/transformers-api/profiles/063-Onslaught.jpg"
   },
   {
     "Name": "Optimus Prime",
     "Allegiance": "Autobot",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Autobot Leader",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789612/transformers-api/profiles/064-Optimus%20Prime.jpg"
   },
   {
     "Name": "Outback",
     "Allegiance": "Autobot",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Gunner",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789623/transformers-api/profiles/065-Outback.jpg"
   },
   {
     "Name": "Perceptor",
     "Allegiance": "Autobot",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Scientist",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789635/transformers-api/profiles/066-Perceptor.jpg"
   },
   {
     "Name": "Pipes",
     "Allegiance": "Autobot",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Warrior",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789644/transformers-api/profiles/067-Pipes.jpg"
   },
   {
     "Name": "Powerglide",
     "Allegiance": "Autobot",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Warrior",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789653/transformers-api/profiles/068-Powerglide.jpg"
   },
   {
     "Name": "Predaking",
     "Allegiance": "Decepticon",
-    "Subgroup": 9,
+    "Subgroup": "Predacon",
     "Type": "Warrior",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789668/transformers-api/profiles/069-Predaking.jpg"
   },
   {
     "Name": "Prowl",
     "Allegiance": "Autobot",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Military Strategist & Analyst",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789678/transformers-api/profiles/070-Prowl.jpg"
   },
   {
     "Name": "Quintessons",
     "Allegiance": "Unicron",
-    "Subgroup": 11,
+    "Subgroup": "Quintesson",
     "Type": "Enforcer",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789688/transformers-api/profiles/071-Quintessons.jpg"
   },
   {
     "Name": "Ramhorn",
     "Allegiance": "Autobot",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Warrior",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789698/transformers-api/profiles/072-Ramhorn.jpg"
   },
   {
     "Name": "Ramjet",
     "Allegiance": "Decepticon",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Warrior",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789709/transformers-api/profiles/073-Ramjet.jpg"
   },
   {
     "Name": "Rampage",
     "Allegiance": "Decepticon",
-    "Subgroup": 9,
+    "Subgroup": "Predacon",
     "Type": "Gunner",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789720/transformers-api/profiles/074-Rampage.jpg"
   },
   {
     "Name": "Ratbat",
     "Allegiance": "Decepticon",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Fuel Scout",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789730/transformers-api/profiles/075-Ratbat.jpg"
   },
   {
     "Name": "Ratchet",
     "Allegiance": "Autobot",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Medic",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789740/transformers-api/profiles/076-Ratchet.jpg"
   },
   {
     "Name": "Ravage",
     "Allegiance": "Decepticon",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Saboteur",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789752/transformers-api/profiles/077-Ravage.jpg"
   },
   {
     "Name": "Razorclaw",
     "Allegiance": "Decepticon",
-    "Subgroup": 9,
+    "Subgroup": "Predacon",
     "Type": "Predacon Commander",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789763/transformers-api/profiles/078-Razorclaw.jpg"
   },
   {
     "Name": "Red Alert",
     "Allegiance": "Autobot",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Security Director",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789781/transformers-api/profiles/079-Red%20Alert.jpg"
   },
   {
     "Name": "Rewind",
     "Allegiance": "Autobot",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Archivist",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789792/transformers-api/profiles/080-Rewind.jpg"
   },
   {
     "Name": "Rodimus Prime",
     "Allegiance": "Autobot",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Protector",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789800/transformers-api/profiles/081-Rodimus%20Prime.jpg"
   },
   {
     "Name": "Rumble",
     "Allegiance": "Decepticon",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Demolitions",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789813/transformers-api/profiles/082-Rumble.jpg"
   },
   {
     "Name": "Runabout",
     "Allegiance": "Decepticon",
-    "Subgroup": 12,
+    "Subgroup": "Battlecharger",
     "Type": "Shocktrooper",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789836/transformers-api/profiles/083-Runabout.jpg"
   },
   {
     "Name": "Runamuck",
     "Allegiance": "Decepticon",
-    "Subgroup": 12,
+    "Subgroup": "Battlecharger",
     "Type": "Shocktrooper",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789849/transformers-api/profiles/084-Runamuck.jpg"
   },
   {
     "Name": "Sandstorm",
     "Allegiance": "Autobot",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Reconnaissance",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789865/transformers-api/profiles/085-Sandstorm.jpg"
   },
   {
     "Name": "Scavenger",
     "Allegiance": "Decepticon",
-    "Subgroup": 8,
+    "Subgroup": "Constructicon",
     "Type": "Mining & Salvage",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789883/transformers-api/profiles/086-Scavenger.jpg"
   },
   {
     "Name": "Scourge",
     "Allegiance": "Decepticon",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Sweep Leader",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789899/transformers-api/profiles/087-Scourge.jpg"
   },
   {
     "Name": "Scrapper",
     "Allegiance": "Decepticon",
-    "Subgroup": 8,
+    "Subgroup": "Constructicon",
     "Type": "Construction Engineer",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789911/transformers-api/profiles/088-Scrapper.jpg"
   },
   {
     "Name": "Seaspray",
     "Allegiance": "Autobot",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Naval Defense",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789947/transformers-api/profiles/089-Seaspray.jpg"
   },
   {
     "Name": "Sharkticon",
     "Allegiance": "Quintesson",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Executioner",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789962/transformers-api/profiles/090-Sharkticon.jpg"
   },
   {
     "Name": "Shockwave",
     "Allegiance": "Decepticon",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Military Operations Commander",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609789984/transformers-api/profiles/091-Shockwave.jpg"
   },
   {
     "Name": "Shrapnel",
     "Allegiance": "Decepticon",
-    "Subgroup": 6,
+    "Subgroup": "Insecticon",
     "Type": "Electronic Warfare",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609790000/transformers-api/profiles/092-Shrapnel.jpg"
   },
   {
     "Name": "Sideswipe",
     "Allegiance": "Autobot",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Warrior",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609790033/transformers-api/profiles/093-Sideswipe.jpg"
   },
   {
     "Name": "Silverbolt",
     "Allegiance": "Autobot",
-    "Subgroup": 2,
+    "Subgroup": "Aerialbot",
     "Type": "Aerialbot Commander",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609790062/transformers-api/profiles/094-Silverbolt.jpg"
   },
   {
     "Name": "Skids",
     "Allegiance": "Autobot",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Theoretician",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609790339/transformers-api/profiles/095-Skids.jpg"
   },
   {
     "Name": "Sky Lynx",
     "Allegiance": "Autobot",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Lieutenant Commander",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609790369/transformers-api/profiles/096-Sky%20Lynx.jpg"
   },
   {
     "Name": "Skydive",
     "Allegiance": "Autobot",
-    "Subgroup": 2,
+    "Subgroup": "Aerialbot",
     "Type": "Air Warfare Strategist",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609790380/transformers-api/profiles/097-Skydive.jpg"
   },
   {
     "Name": "Skywarp",
     "Allegiance": "Decepticon",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Warrior",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609790389/transformers-api/profiles/098-Skywarp.jpg"
   },
   {
     "Name": "Slag",
     "Allegiance": "Autobot",
-    "Subgroup": 10,
+    "Subgroup": "Dinobot",
     "Type": "Flamethrower",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609790398/transformers-api/profiles/099-Slag.jpg"
   },
   {
     "Name": "Slingshot",
     "Allegiance": "Autobot",
-    "Subgroup": 2,
+    "Subgroup": "Aerialbot",
     "Type": "Ground Troop Support",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609790407/transformers-api/profiles/100-Slingshot.jpg"
   },
   {
     "Name": "Sludge",
     "Allegiance": "Autobot",
-    "Subgroup": 10,
+    "Subgroup": "Dinobot",
     "Type": "Jungle Warrior and Demolitions",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609790417/transformers-api/profiles/101-Sludge.jpg"
   },
   {
     "Name": "Smokescreen",
     "Allegiance": "Autobot",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Diversionary Tactician",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609790427/transformers-api/profiles/102-Smokescreen.jpg"
   },
   {
     "Name": "Snarl",
     "Allegiance": "Autobot",
-    "Subgroup": 10,
+    "Subgroup": "Dinobot",
     "Type": "Desert Warrior",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609790438/transformers-api/profiles/103-Snarl.jpg"
   },
   {
     "Name": "Soundwave",
     "Allegiance": "Decepticon",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Communications",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609790447/transformers-api/profiles/104-Soundwave.jpg"
   },
   {
     "Name": "Springer",
     "Allegiance": "Autobot",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Aerial Defense",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609790454/transformers-api/profiles/105-Springer.jpg"
   },
   {
     "Name": "Starscream",
     "Allegiance": "Decepticon",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Decepticon Aerospace Commander",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609790466/transformers-api/profiles/106-Starscream.jpg"
   },
   {
     "Name": "Steeljaw",
     "Allegiance": "Autobot",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Tracker",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609790484/transformers-api/profiles/107-Steeljaw.jpg"
   },
   {
     "Name": "Streetwise",
     "Allegiance": "Autobot",
-    "Subgroup": 4,
+    "Subgroup": "Protectobot",
     "Type": "Interceptor",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609790493/transformers-api/profiles/108-Streetwise.jpg"
   },
   {
     "Name": "Sunstreaker",
     "Allegiance": "Autobot",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Warrior",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609790503/transformers-api/profiles/109-Sunstreaker.jpg"
   },
   {
     "Name": "Superion",
     "Allegiance": "Autobot",
-    "Subgroup": 2,
+    "Subgroup": "Aerialbot",
     "Type": "Warrior",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609790513/transformers-api/profiles/110-Superion.jpg"
   },
   {
     "Name": "Swindle",
     "Allegiance": "Decepticon",
-    "Subgroup": 5,
+    "Subgroup": "Combaticon",
     "Type": "Munitions Expert",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609790523/transformers-api/profiles/111-Swindle.jpg"
   },
   {
     "Name": "Swoop",
     "Allegiance": "Autobot",
-    "Subgroup": 10,
+    "Subgroup": "Dinobot",
     "Type": "Bombardier",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609790533/transformers-api/profiles/112-Swoop.jpg"
   },
   {
     "Name": "Tailgate",
     "Allegiance": "Autobot",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Scout",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609790547/transformers-api/profiles/113-Tailgate.jpg"
   },
   {
     "Name": "Tantrum",
     "Allegiance": "Decepticon",
-    "Subgroup": 9,
+    "Subgroup": "Predacon",
     "Type": "Fueler",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609790559/transformers-api/profiles/114-Tantrum.jpg"
   },
   {
     "Name": "Thrust",
     "Allegiance": "Decepticon",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Warrior",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609790568/transformers-api/profiles/115-Thrust.jpg"
   },
   {
     "Name": "Thundercracker",
     "Allegiance": "Decepticon",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Warrior",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609790578/transformers-api/profiles/116-Thundercracker.jpg"
   },
   {
     "Name": "Topspin",
     "Allegiance": "Autobot",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Land & Sea Assault",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609790597/transformers-api/profiles/117-Topspin.jpg"
   },
   {
     "Name": "Tracks",
     "Allegiance": "Autobot",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Warrior",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609790607/transformers-api/profiles/118-Tracks.jpg"
   },
   {
     "Name": "Trailbreaker",
     "Allegiance": "Autobot",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Defensive Strategist",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609790620/transformers-api/profiles/119-Trailbreaker.jpg"
   },
   {
     "Name": "Trypticon",
     "Allegiance": "Decepticon",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Assault Base",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609790633/transformers-api/profiles/120-Trypticon.jpg"
   },
   {
     "Name": "Twin Twist",
     "Allegiance": "Autobot",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Demolitions",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609790655/transformers-api/profiles/121-Twin%20Twist.jpg"
   },
   {
     "Name": "Ultra Magnus",
     "Allegiance": "Autobot",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "City Commander",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609790666/transformers-api/profiles/122-Ultra%20Magnus.jpg"
   },
   {
     "Name": "Unicron",
     "Allegiance": "None",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Universal Dominator",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609790677/transformers-api/profiles/123-Unicron.jpg"
   },
   {
     "Name": "Vortex",
     "Allegiance": "Decepticon",
-    "Subgroup": 5,
+    "Subgroup": "Combaticon",
     "Type": "Interrogation",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609790685/transformers-api/profiles/124-Vortex.jpg"
   },
   {
     "Name": "Warpath",
     "Allegiance": "Autobot",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Warrior",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609790707/transformers-api/profiles/125-Warpath.jpg"
   },
   {
     "Name": "Wheelie",
     "Allegiance": "Autobot",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Survivalist",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609790720/transformers-api/profiles/126-Wheelie.jpg"
   },
   {
     "Name": "Wheeljack",
     "Allegiance": "Autobot",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Mechanical Engineer",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609790733/transformers-api/profiles/127-Wheeljack.jpg"
   },
   {
     "Name": "Wildrider",
     "Allegiance": "Decepticon",
-    "Subgroup": 7,
+    "Subgroup": "Stunticon",
     "Type": "Terrorist",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609790742/transformers-api/profiles/128-Wildrider.jpg"
   },
   {
     "Name": "Windcharger",
     "Allegiance": "Autobot",
-    "Subgroup": 1,
+    "Subgroup": "None",
     "Type": "Warrior",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609790767/transformers-api/profiles/129-Windcharger.jpg"
   },
   {
     "Name": "Wreck-Gar",
     "Allegiance": "Autobot",
-    "Subgroup": 13,
+    "Subgroup": "Junkion",
     "Type": "Junkion Leader",
     "imgURL": "https://res.cloudinary.com/crxssed/image/upload/v1609790778/transformers-api/profiles/130-Wreck-Gar.jpg"
   }
