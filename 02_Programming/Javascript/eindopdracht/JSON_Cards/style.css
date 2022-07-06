@@ -42,6 +42,25 @@ body {
     margin-top: 2rem;
 }
 
+.card__wrapper {
+    background-color: rgb(96, 2, 4);
+    border: 2px solid rgb(217, 214, 202);
+    text-align: center;
+    border-radius: 5px;  
+}
+
+.card__wrapper img {
+    margin-bottom: 5px;
+    overflow: hidden;
+    object-fit: contain;
+    cursor: pointer;
+    transition: 0.3s all ease;
+   }
+
+.card__wrapper img:hover {
+ transform: scale(0.95);
+}
+
 h2 { 
     font-family: 'helvetica neue', sans-serif;
     font-stretch: extra-expanded;
@@ -68,25 +87,6 @@ p {
     margin-bottom: 5px; 
 }
 
-.card__wrapper {
-    background-color: rgb(96, 2, 4);
-    border: 2px solid rgb(217, 214, 202);
-    text-align: center;
-    border-radius: 5px;  
-}
-
-.transformer__image {
-    margin-bottom: -4px;
-    overflow: hidden;
-    object-fit: contain;
-    cursor: pointer;
-    transition: 0.3s all ease;
-   }
-
-.transformer__image:hover {
- transform: scale(0.95);
-}
-
 #container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -94,7 +94,7 @@ p {
     gap: 1rem;
 }
 
-/* .modal {
+.modal {
     position: fixed;
     height: 100%;
     width: 100%;
@@ -104,40 +104,53 @@ p {
     color:rgb(217, 214, 202);
     z-index: 1;
     overflow: auto;
-    /* weg commenten voor edit */
-    /* opacity: 0;
-    pointer-events: 0; */
-/* = pointer events uitzetten bij opacity nul ->  */
-/* }
-.modal__content {
+    opacity: 1;
+    pointer-events: all;
+   
+    } 
+    
+    /* = pointer events uitzetten bij opacity nul ->  */
+
+/* .modal__content {
 min-height: 100vh;
 display: flex;
+flex-direction: column;
 justify-content: center;
 align-items: center;
+    }  */
 
-}
-.modal__img {
+/* .modal__img {
     width: 80%;
     max-width: 700px;
     animation: zoom .3s linear;
-}
+    } */
 
-@keyframes zoom {
+/* @keyframes zoom {
     from {
         transform: scale(0);
     }
     to {
         transform: scale(1);
     }
-}
-.close {
+} */
+/* .close {
     position: absolute;
     top: 1em;
     right: 1.5em;
     font-size: 1.5em;
     cursor: pointer;
-}
+    } */
 
-.close:hover{
+/* .close:hover{
     transform: scale(1.2);
-}  */
+}   */
+
+/* .modal.appear {
+    opacity: 1;
+    pointer-events: all;
+} */
+
+/* .modal.appear .modal__img {
+    animation: zoom 0.3s linear;
+} */
+
