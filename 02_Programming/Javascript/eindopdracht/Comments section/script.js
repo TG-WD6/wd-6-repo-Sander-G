@@ -8,15 +8,13 @@ document.getElementById('addComments').addEventListener('click', function (ev) {
 });
 
 function addComment(ev) {
-    let commentText
+    let commentText;
     let wrapDiv;
     const textBox = document.createElement('div');
-
     const replyButton = document.createElement('button');
     replyButton.className = 'reply';
     replyButton.innerHTML = 'Reply';
-
-
+    
     const deleteButton = document.createElement('button');
     deleteButton.innerHTML = 'Delete';
     deleteButton.className = 'deleteComment';
@@ -75,12 +73,11 @@ document.getElementById('allComments').addEventListener('click', function (e) {
     if (hasClass(e.target, 'reply')) {
         const parentDiv = e.target.parentElement;
         const wrapDiv = document.createElement('div');
-        // wrapDiv.style.marginLeft = (Number.parseInt(parentDiv.style.marginLeft) + 20).toString() + 'px';
         wrapDiv.className = 'wrapper';
 
 
         const textArea = document.createElement('textarea');
-        textArea.style.marginRight = '20px';
+        textArea.classList.add('replyBox');
 
         const addButton = document.createElement('button');
         addButton.className = 'addReply';
