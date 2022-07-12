@@ -5,18 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Searchbar</title>
-    <script src="app.js" defer></script>
     <link rel="stylesheet" href="app.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+        </style>
+    <script src="app.js" defer></script>
+   
 </head>
 <body>
-<div class="search-wrapper">
+<div class="wrapper">
+
 <form>
-<input type="text" id="searchInput" placeholder="Search..">
+<input type="text" id="searchInput" placeholder="Search.." autocomplete="off">
 </form>
+
+<div class="output">
 </div>
+</div>
+
+<!-- lijst met user inputs  -->
 <div class="result">
-<h3>Search items:</h3>
-<ul class="search__list"></ul>
+<h3>Searched items:</h3>
+<ul id="listMaker"></ul>
 </div>
 
   
