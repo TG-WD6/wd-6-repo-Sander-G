@@ -111,46 +111,47 @@ p {
     
     /* = pointer events uitzetten bij opacity nul ->  */
 
-/* .modal__content {
+.modal__content {
 min-height: 100vh;
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-    }  */
+padding-top: 20px;
+    } 
 
-/* .modal__img {
+.modal__img {
     width: 80%;
     max-width: 700px;
     animation: zoom .3s linear;
-    } */
+    }
 
-/* @keyframes zoom {
+@keyframes zoom {
     from {
         transform: scale(0);
     }
     to {
         transform: scale(1);
     }
-} */
-/* .close {
+}
+.close {
     position: absolute;
     top: 1em;
     right: 1.5em;
     font-size: 1.5em;
     cursor: pointer;
-    } */
+    }
 
-/* .close:hover{
+.close:hover{
     transform: scale(1.2);
-}   */
+}  
 
-/* .modal.appear {
+.modal.appear {
     opacity: 1;
     pointer-events: all;
-} */
+}
 
-/* .modal.appear .modal__img {
+.modal.appear .modal__img {
     animation: zoom 0.3s linear;
-} */
+}
 
