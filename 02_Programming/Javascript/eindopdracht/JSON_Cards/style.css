@@ -43,7 +43,7 @@ body {
 }
 
 .card__wrapper {
-    background-color: rgb(96, 2, 4);
+    /* background-color: rgb(96, 2, 4);                  weggecomment om andere achtergrondkleur te maken via JS */
     border: 2px solid rgb(217, 214, 202);
     text-align: center;
     border-radius: 5px;  
@@ -58,7 +58,7 @@ body {
    }
 
 .card__wrapper img:hover {
- transform: scale(0.95);
+ transform: scale(0.98);
 }
 
 h2 { 
@@ -94,6 +94,8 @@ p {
     gap: 1rem;
 }
 
+
+
 .modal {
     position: fixed;
     height: 100%;
@@ -102,56 +104,36 @@ p {
     left: 0;
     background-color: rgba(0, 0, 0, 0.8); 
     color:rgb(217, 214, 202);
-    z-index: 1;
     overflow: auto;
-    opacity: 1;
     pointer-events: all;
-   
-    } 
     
-    /* = pointer events uitzetten bij opacity nul ->  */
+} 
+    
 
 .modal__content {
-min-height: 100vh;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-padding-top: 20px;
-    } 
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
 
-.modal__img {
-    width: 80%;
-    max-width: 700px;
-    animation: zoom .3s linear;
-    }
-
-@keyframes zoom {
-    from {
-        transform: scale(0);
-    }
-    to {
-        transform: scale(1);
-    }
+.modal__plaatje {
+    max-width: 90vw;
+    max-height: 90vh;
+    padding-top: 1rem;   
 }
+
 .close {
     position: absolute;
     top: 1em;
     right: 1.5em;
     font-size: 1.5em;
     cursor: pointer;
-    }
+ }
 
 .close:hover{
     transform: scale(1.2);
 }  
 
-.modal.appear {
-    opacity: 1;
-    pointer-events: all;
-}
-
-.modal.appear .modal__img {
-    animation: zoom 0.3s linear;
-}
 
