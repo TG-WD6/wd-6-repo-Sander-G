@@ -45,6 +45,7 @@ body {
     display: grid;
     place-items: center;
     transition: 0.3s all ease;
+    width: fit-content;
 }
 
 .card__wrapper img {
@@ -132,3 +133,6 @@ p {
 .close:hover {
     transform: scale(1.2);
 }
+
+
+/* nog mediaquery toevoegen voor kleine schermen */
