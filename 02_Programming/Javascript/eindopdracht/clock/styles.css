@@ -5,28 +5,63 @@
 }
 
 body {
-
-    /* background: linear-gradient(to right, hsl(200, 100%, 50%), hsl(175, 100%, 50%)); */
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     min-height: 100vh;
     overflow: hidden;
 }
 
+.root {
+    position: absolute;
+    justify-content: center;
+    background-image: url("./swissClock_nohands.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
 
-.bg {
-   
-  height: 100%;
-  background-image: url("./swissClock_nohands.jpg");
-  background-size: auto;
-  background-repeat: no-repeat;
-    min-height: 100vh;
-    
 }
+
+/* top nav */
+.topnav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #091921;
+    opacity: 85%;
+    overflow: hidden;
+    padding: 4px;
+    z-index:10;
+
+ 
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 4px 15px 4px 15px;
+    text-decoration: none;
+    font-size: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+    border: 1px transparent;
+    border-radius: 20px;
+  }
+
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+    border: 1px transparent;
+    border-radius: 20px;
+  }
+
     
 .content {
-    position:absolute;
+    display: inline-flex;
+    position: inherit;
     top: 292px;
     left: 814px;
     width: 100%;

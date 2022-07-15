@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,30 +9,38 @@
     <link rel="stylesheet" href="app.css" />
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
-        </style>
+    </style>
     <script src="app.js" defer></script>
-   
 </head>
+
 <body>
+    <!--********  topnav  ********-->
+    <div class="topnav">
+        <a href="./../clock/index.html">Clock</a>
+        <a href="./../image_carousel/index.html">Carousel</a>
+        <a href="./../JSON_Cards/index.html">Transformerdex</a>
+        <a class="active" href="./../Searchbar/index.html">Searchbar</a>
+        <a href="./../Comments_section/index.html">Comments</a>
+    </div>
 
-<div class="wrapper">
-    <img src="./sanderLogo.png" class="sander" alt="not a searchengine">
-<form>
-<input type="text" class="input" id="searchInput" placeholder="Search.."  aria-label="Search" autocomplete="off">
-</form>
+    <!--**  search input/output  **-->
+    <div class="wrapper">
+        <img src="./sanderLogo.png" class="sander" alt="not a searchengine">
+        <form>
+            <input type="text" class="input" id="searchInput" placeholder="Search.." 
+            aria-label="Search" autocomplete="off">
+        </form>
+        <div class="output">
+        </div>
+    </div>
 
-<div class="output">
-</div>
-</div>
+    <!-- Lijst met eerdere user inputs  -->
+    <div class="result">
+        <h4>Previous search items:</h4>
+        <ul id="listMaker"></ul>
+    </div>
 
-<!-- lijst met user inputs  -->
-<div class="result">
-<h3>Searched items:</h3>
-<ul id="listMaker"></ul>
-</div>
-
-  
 
 </body>
+
 </html>
-        

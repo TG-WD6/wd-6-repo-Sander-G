@@ -15,9 +15,6 @@ function setClock() {
    setRotation(minuteHand,minutesRatio)
    setRotation(hourHand, hoursRatio)
 
-
-
-
 }
 
 

@@ -22,28 +22,28 @@ function listMaker(text) {                                        // user input 
 }
 
 form.addEventListener('submit', function (e) {                    // event listener voor submit van zoekterm
-  e.preventDefault();                                            // prevent default submit action (..iets met geen server)
-  searchArray.push(input.value);                                 // user input toevoegen aan search Array on submit
-  localStorage.setItem('items', JSON.stringify(searchArray));    // javascript search array object naar string omzetten on submit
+  e.preventDefault();                                             // prevent default submit action (..iets met geen server)
+  searchArray.push(input.value);                                  // user input toevoegen aan search Array on submit
+  localStorage.setItem('items', JSON.stringify(searchArray));     // javascript search array object naar string omzetten on submit
 
 
-  listMaker(input.value);                                        // voeg item toe aan listMaker lijst
-  input.value = '';                                             // reset inputfield na submit
+  listMaker(input.value);                                         // voeg item toe aan listMaker lijst
+  input.value = '';                                               // reset inputfield na submit
 });
 
 input.addEventListener('input', filter);                          // event listener op user input voor filter
 
 function filter(ev) {
-                          // console.log(ev.target.value.toLowerCase());  // capture wat de gebruiker invult per keystroke
+  // console.log(ev.target.value.toLowerCase());  // capture wat de gebruiker invult per keystroke
   let temp = '';
   const result = searchArray.filter(function (items) {
     return items.toLowerCase().includes(ev.target.value.toLowerCase());
   });
 
-                          // console.log(result)                // log resultaat van vergelijking van input met searcharray items 
+  // console.log(result)                  // log resultaat van vergelijking van input met searcharray items 
 
-  if (result.length > 0) {                                      // als resultaat van vergl gevonden dan geef voor ieder
-    temp = `<ul class='search-items'>`;                         // item een list item in search-items lijst
+  if (result.length > 0) {                                        // als resultaat van vergl gevonden dan geef voor ieder
+    temp = `<ul class='search-items'>`;                           // item een list item in search-items lijst
     result.forEach((item) => {
       temp += `<li class='search-item'> ${item} </li>`;
     });
@@ -52,20 +52,17 @@ function filter(ev) {
   else {
     temp = `<li class='search-item'></li>`;                       // anders geef leeg list item terug
   }
-  output.innerHTML = temp;                                       // temp -> output html 
+  output.innerHTML = temp;                                        // temp -> output html 
 }
 
 
 document.querySelector('input').addEventListener('keyup', function (evenement) {
   if (this.value == '')
-    output.style.opacity = 0;                                         // zoekresultaten niet
-  else output.style.opacity = 1;                                    // weergeven bij lege zoekbar
+    output.style.opacity = 0;                                     // zoekresultaten niet
+  else output.style.opacity = 1;                                  // weergeven bij lege zoekbar
 
 });
 
-/////// to do: 
-// - stylen
-//
 
 
 
