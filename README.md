@@ -29,6 +29,7 @@ Hardskills:
  - HTML Basics
  - CSS Basics
  - Sass CSS preprocessor
+ - JavaScript Basics
 
 
  
