@@ -2,7 +2,10 @@ import React from 'react'
 
 function FunctionalComponent() {
   return (
-    <div>FunctionalComponent</div>
+    <div>
+      <h2>Hello World! - Functional Component</h2>
+
+    </div>
   )
 }
 
